@@ -31,7 +31,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         public static int agregarOperacion(Operacion operacion)
         {
             int retorna = 0;
-            using (SqlConnection conexion = conexionBDJ.abrirConexion())
+            using (SqlConnection conexion = conexionBD.abrirConexion())
             {
                 string query = "insert into Operacion (idPaciente, idDoctor, idHospital, descripcion) values('" + operacion.idPaciente + "', '" + operacion.idDoctor + "', " + operacion.idHospital + ", '" + operacion.descripcion + "')";
                 SqlCommand comando = new SqlCommand(query, conexion);

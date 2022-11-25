@@ -29,7 +29,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         }
         public static int agregarContrato(Contrato contrato)
         {
-            using (SqlConnection conexion = conexionBDJ.abrirConexion())
+            using (SqlConnection conexion = conexionBD.abrirConexion())
             {
                 string query = "insert into Contrato (idPaciente, idHospital, codigoCotrato, valorContrato, descripcion, valorRestante, fechaContrato) values('" + contrato.idPaciente + "', " + contrato.idHospital + ", '" + contrato.codigoContrato + "', " + contrato.valorContrato + ", " + contrato.valorRestante + ", '"+contrato.fechaContrato+"')";
                 SqlCommand comando = new SqlCommand(query, conexion);

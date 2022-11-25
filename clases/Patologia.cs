@@ -19,7 +19,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         public static int agregarPatologia(Patologia patologia)
         {
             int retorna = 0;
-            using (SqlConnection conexion = conexionBDJ.abrirConexion())
+            using (SqlConnection conexion = conexionBD.abrirConexion())
             {
                 string query = "insert into Patologia (nombre) values('"+patologia.nombre+"')";
                 SqlCommand comando = new SqlCommand(query, conexion);

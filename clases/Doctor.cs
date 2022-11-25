@@ -32,7 +32,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         }
         public static int agregarDoctor(Doctor doctor)
         {
-            using (SqlConnection conexion = conexionBDJ.abrirConexion())
+            using (SqlConnection conexion = conexionBD.abrirConexion())
             {
                 string query = "insert into Doctor (nombre, apellido, telefono,correo,especialidad,gradoAcademico,estadoCivil,idHospital) values('" + doctor.nombre + "', '" + doctor.apellido + "', '" + doctor.telefono + "', '" + doctor.correo + "','" + doctor.especialidad + "', '" + doctor.gradoAcademico + "','" + doctor.estadoCivil + "', '" + doctor.idHospital + "')";
                 SqlCommand comando = new SqlCommand(query, conexion);

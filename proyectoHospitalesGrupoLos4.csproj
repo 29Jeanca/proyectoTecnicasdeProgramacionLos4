@@ -60,6 +60,12 @@
     <Compile Include="ventanas\ventanaAgregarHospitales.Designer.cs">
       <DependentUpon>ventanaAgregarHospitales.cs</DependentUpon>
     </Compile>
+    <Compile Include="ventanas\ventanaAgregarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanaAgregarPaciente.Designer.cs">
+      <DependentUpon>ventanaAgregarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\ventanaAgregarVisitasPost.cs">
       <SubType>Form</SubType>
     </Compile>

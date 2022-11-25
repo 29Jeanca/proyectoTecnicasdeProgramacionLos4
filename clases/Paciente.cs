@@ -35,7 +35,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         {
             int retorna = 0;
 
-            using (SqlConnection conexion = conexionBDJ.abrirConexion())
+            using (SqlConnection conexion = conexionBD.abrirConexion())
             {
                 string query = "insert into Paciente (nombre, apellido, telefono, correo, estadoCivil,activo, patologia, idHospital) values('" + paciente.nombre + "', '" + paciente.apellido + "', " + paciente.telefono + ", '" + paciente.correo + "', '" + paciente.estadoCivil + "', '" + paciente.activo + "' , '"+paciente.patologia+"', '"+paciente.idHospital+"')";
                 SqlCommand comando = new SqlCommand(query, conexion);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace proyectoHospitalesGrupoLos4.clases
 {
-    public class conexionBDJ
+    public class conexionBD
     {
         public static SqlConnection abrirConexion()
         {
