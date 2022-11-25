@@ -54,6 +54,12 @@
     <Compile Include="clases\Paciente.cs" />
     <Compile Include="clases\Patologia.cs" />
     <Compile Include="clases\Visitas_Post_Operatorias.cs" />
+    <Compile Include="ventanas\ventanaAgregarInternacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanaAgregarInternacion.Designer.cs">
+      <DependentUpon>ventanaAgregarInternacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\ventanaAgregarOperacion.cs">
       <SubType>Form</SubType>
     </Compile>
