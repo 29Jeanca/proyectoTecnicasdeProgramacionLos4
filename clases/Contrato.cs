@@ -17,7 +17,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         public double valorRestante { get; set; }
         public string fechaContrato { get; set; }
 
-        Contrato() { }
+        public Contrato() { }
         public Contrato(int idPaciente, int idHospital, double valorContrato, string codigoContrato, double valorRestante, string fechaContrato)
         {
             this.idPaciente = idPaciente;

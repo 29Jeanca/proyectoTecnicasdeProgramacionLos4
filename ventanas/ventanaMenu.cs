@@ -30,5 +30,19 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             v_VisitasPost.Show();
             this.Visible = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ventanaAgregarPaciente ventanaPaciente = new ventanaAgregarPaciente();
+            ventanaPaciente.Show();
+            this.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ventanaAgregarInternacion ventanaInternacion = new ventanaAgregarInternacion(); 
+            ventanaInternacion.Show();
+            this.Visible = false;
+        }
     }
 }

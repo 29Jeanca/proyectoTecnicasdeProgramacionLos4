@@ -50,6 +50,7 @@
     <Compile Include="clases\Contrato.cs" />
     <Compile Include="clases\Doctor.cs" />
     <Compile Include="clases\Hospital.cs" />
+    <Compile Include="clases\Internacion.cs" />
     <Compile Include="clases\Operacion.cs" />
     <Compile Include="clases\Paciente.cs" />
     <Compile Include="clases\Patologia.cs" />
@@ -127,6 +128,12 @@
     </Compile>
     <EmbeddedResource Include="ventanas\ventanaAgregarHospitales.resx">
       <DependentUpon>ventanaAgregarHospitales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanaAgregarInternacion.resx">
+      <DependentUpon>ventanaAgregarInternacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanaAgregarPaciente.resx">
+      <DependentUpon>ventanaAgregarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaAgregarVisitasPost.resx">
       <DependentUpon>ventanaAgregarVisitasPost.cs</DependentUpon>
