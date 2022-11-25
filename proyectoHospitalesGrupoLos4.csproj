@@ -132,6 +132,9 @@
     <EmbeddedResource Include="ventanas\ventanaAgregarInternacion.resx">
       <DependentUpon>ventanaAgregarInternacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanaAgregarOperacion.resx">
+      <DependentUpon>ventanaAgregarOperacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaAgregarPaciente.resx">
       <DependentUpon>ventanaAgregarPaciente.cs</DependentUpon>
     </EmbeddedResource>
