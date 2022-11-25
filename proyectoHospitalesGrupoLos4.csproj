@@ -47,7 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\conexionBD.cs" />
+    <Compile Include="clases\Contrato.cs" />
+    <Compile Include="clases\Doctor.cs" />
     <Compile Include="clases\Hospital.cs" />
+    <Compile Include="clases\Operacion.cs" />
+    <Compile Include="clases\Paciente.cs" />
+    <Compile Include="clases\Patologia.cs" />
     <Compile Include="clases\Visitas_Post_Operatorias.cs" />
     <Compile Include="ventanas\ventanaAgregarHospitales.cs">
       <SubType>Form</SubType>
