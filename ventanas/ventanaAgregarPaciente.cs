@@ -63,6 +63,14 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             else { paciente.patologia = selectPatologia.Text; }
 
             Paciente.agregarPaciente(paciente);
+ 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ventanaMenu menu = new ventanaMenu();
+            menu.Show();
+            this.Visible = false;
         }
     }
 }

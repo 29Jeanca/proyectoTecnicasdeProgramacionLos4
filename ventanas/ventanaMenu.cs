@@ -44,5 +44,22 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             ventanaInternacion.Show();
             this.Visible = false;
         }
+
+        private void ventanaMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ventanaAgregarDoctor ventanaDoctor = new ventanaAgregarDoctor();
+            ventanaDoctor.Show();
+            this.Visible = false;
+        }
     }
 }

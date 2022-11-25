@@ -31,7 +31,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         {
             using (SqlConnection conexion = conexionBD.abrirConexion())
             {
-                string query = "insert into Contrato (idPaciente, idHospital, codigoCotrato, valorContrato, descripcion, valorRestante, fechaContrato) values('" + contrato.idPaciente + "', " + contrato.idHospital + ", '" + contrato.codigoContrato + "', " + contrato.valorContrato + ", " + contrato.valorRestante + ", '"+contrato.fechaContrato+"')";
+                string query = "insert into Contrato (idPaciente, idHospital, codigoContrato, valorContrato, valorRestante, fechaContrato) values('" + contrato.idPaciente + "', " + contrato.idHospital + ", '" + contrato.codigoContrato + "', " + contrato.valorContrato + ", " + contrato.valorRestante + ", '"+contrato.fechaContrato+"')";
                 SqlCommand comando = new SqlCommand(query, conexion);
                 comando.ExecuteNonQuery();
             }

@@ -46,6 +46,12 @@ namespace proyectoHospitalesGrupoLos4.clases
             SqlDataReader renderDoctores = comando.ExecuteReader();
             return renderDoctores;
         }
+        public static int generadorDeNumerosRandoms()
+        {
+            Random random = new Random();
+            int numero = random.Next(1000, 9999);
+            return numero;
+        }
 
     }
 

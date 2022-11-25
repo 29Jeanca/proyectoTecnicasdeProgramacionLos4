@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace proyectoHospitalesGrupoLos4.clases
 {
-    internal class Paciente
+    public class Paciente
     {
         public int idHospital { get; set; }
         public string nombre { get; set; }
@@ -42,6 +42,17 @@ namespace proyectoHospitalesGrupoLos4.clases
                 retorna = comando.ExecuteNonQuery();
             }
             return retorna;
+        }
+        public static int cambiarPacienteActivo(int id)
+        {
+            int retorna = 0;
+            using (SqlConnection conexion = conexionBD.abrirConexion())
+            {
+                string query = "UPDATE Paciente SET activo = '" + true + "' WHERE id = '" + id + "'";
+                SqlCommand comando = new SqlCommand(query, conexion);
+                retorna = comando.ExecuteNonQuery();
+            }
+            return retorna;  
         }
     }
 }

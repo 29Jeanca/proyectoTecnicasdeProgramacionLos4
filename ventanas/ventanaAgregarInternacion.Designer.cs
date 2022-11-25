@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.selectHospital = new System.Windows.Forms.ComboBox();
             this.selectPaciente = new System.Windows.Forms.ComboBox();
-            this.Paciente = new System.Windows.Forms.Label();
+            this.LABBEL = new System.Windows.Forms.Label();
             this.selectDoctor = new System.Windows.Forms.ComboBox();
             this.Doctor = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -42,6 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtFechaContrato = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,14 +70,14 @@
             this.selectPaciente.Size = new System.Drawing.Size(121, 21);
             this.selectPaciente.TabIndex = 3;
             // 
-            // Paciente
+            // LABBEL
             // 
-            this.Paciente.AutoSize = true;
-            this.Paciente.Location = new System.Drawing.Point(28, 73);
-            this.Paciente.Name = "Paciente";
-            this.Paciente.Size = new System.Drawing.Size(49, 13);
-            this.Paciente.TabIndex = 2;
-            this.Paciente.Text = "Paciente";
+            this.LABBEL.AutoSize = true;
+            this.LABBEL.Location = new System.Drawing.Point(28, 73);
+            this.LABBEL.Name = "LABBEL";
+            this.LABBEL.Size = new System.Drawing.Size(49, 13);
+            this.LABBEL.TabIndex = 2;
+            this.LABBEL.Text = "Paciente";
             // 
             // selectDoctor
             // 
@@ -115,7 +116,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(108, 442);
+            this.button1.Location = new System.Drawing.Point(178, 442);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 52);
             this.button1.TabIndex = 8;
@@ -164,11 +165,22 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Fecha de contrato";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(49, 442);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(103, 52);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Atras";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // ventanaAgregarInternacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 506);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtFechaContrato);
             this.Controls.Add(this.label4);
@@ -180,7 +192,7 @@
             this.Controls.Add(this.selectDoctor);
             this.Controls.Add(this.Doctor);
             this.Controls.Add(this.selectPaciente);
-            this.Controls.Add(this.Paciente);
+            this.Controls.Add(this.LABBEL);
             this.Controls.Add(this.selectHospital);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -199,7 +211,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox selectHospital;
         private System.Windows.Forms.ComboBox selectPaciente;
-        private System.Windows.Forms.Label Paciente;
+        private System.Windows.Forms.Label LABBEL;
         private System.Windows.Forms.ComboBox selectDoctor;
         private System.Windows.Forms.Label Doctor;
         private System.Windows.Forms.TextBox txtDescripcion;
@@ -210,5 +222,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker txtFechaContrato;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -32,7 +32,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             operacion.descripcion = txt_DescripcionOperacion.Text;
             operacion.fechaContrato = input_FechaContrato.Text;
 
-            int contador=
+            
         }
 
         private void ventanaAgregarOperacion_Load(object sender, EventArgs e)

@@ -32,32 +32,53 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             {
                 selectPaciente.Items.Add(pacienteRender["id"] + "-" +pacienteRender["nombre"]);
             }
-            
+            SqlDataReader doctorRender = conexionBD.traerInformacionDBDobleFiltro("nombre, id", "Doctor", "especialidad", "Medico general", "idHospital", selectHospital.Text);
+            while (doctorRender.Read())
+            {
+                selectDoctor.Items.Add(doctorRender["id"] + "-" + doctorRender["nombre"]);
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Internacion internacion = new Internacion();
             internacion.idHospital = Convert.ToInt32(selectHospital.Text);
-            internacion.idPaciente = Convert.ToInt32(selectPaciente.Text);
-            internacion.idDoctor = Convert.ToInt32(selectDoctor.Text);
+            internacion.idPaciente = Convert.ToInt32(selectPaciente.Text.Split('-')[0]);
+            internacion.idDoctor = Convert.ToInt32(selectDoctor.Text.Split('-')[0]);
             internacion.descripcion = txtDescripcion.Text;
+            
 
             Contrato contrato = new Contrato();
             contrato.idHospital = Convert.ToInt32(selectHospital.Text);
-            contrato.idPaciente = Convert.ToInt32(selectPaciente.Text);
+            contrato.idPaciente = Convert.ToInt32(selectPaciente.Text.Split('-')[0]);
             contrato.valorContrato = Convert.ToDouble(txtValorContrato.Text);
             contrato.fechaContrato = txtFechaContrato.Text;
             contrato.valorRestante = Convert.ToDouble(txtValorContrato.Text);
+            contrato.codigoContrato = "INT" + conexionBD.generadorDeNumerosRandoms();
+            if (selectHospital.Text != "" || selectDoctor.Text != "" || selectPaciente.Text != "" || txtValorContrato.Text != "")
+            {
+                Internacion.agregarInternacion(internacion);
+                Contrato.agregarContrato(contrato);
+                Paciente.cambiarPacienteActivo(contrato.idPaciente);
+            }
+            else {
+                MessageBox.Show("faltan datos por digitar");
+            }
+            
         }
 
         private void selectDoctor_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlDataReader doctorRender = conexionBD.traerInformacionDBDobleFiltro("nombre, id", "Doctor", "especialidad", "Medico general", "idHospital", selectHospital.Text);
-            while (doctorRender.Read())
-            {
-                selectDoctor.Items.Add(doctorRender["id"] + "-" + doctorRender["nombre"]);
-            }
+            
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ventanaMenu menu = new ventanaMenu();
+            menu.Show();
+            this.Visible = false;
         }
     }
 }

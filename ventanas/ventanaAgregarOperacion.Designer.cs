@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ventanaAgregarOperacion));
             this.combo_IdPaciente = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,93 +49,124 @@
             // 
             this.combo_IdPaciente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_IdPaciente.FormattingEnabled = true;
-            resources.ApplyResources(this.combo_IdPaciente, "combo_IdPaciente");
+            this.combo_IdPaciente.Location = new System.Drawing.Point(117, 38);
             this.combo_IdPaciente.Name = "combo_IdPaciente";
+            this.combo_IdPaciente.Size = new System.Drawing.Size(164, 21);
+            this.combo_IdPaciente.TabIndex = 14;
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
+            this.label1.Location = new System.Drawing.Point(191, 38);
             this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(143, 23);
+            this.label1.TabIndex = 13;
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
+            this.label2.Location = new System.Drawing.Point(233, 47);
             this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(143, 23);
+            this.label2.TabIndex = 12;
             // 
             // combo_IdDoctor
             // 
             this.combo_IdDoctor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_IdDoctor.FormattingEnabled = true;
-            resources.ApplyResources(this.combo_IdDoctor, "combo_IdDoctor");
+            this.combo_IdDoctor.Location = new System.Drawing.Point(93, 94);
             this.combo_IdDoctor.Name = "combo_IdDoctor";
+            this.combo_IdDoctor.Size = new System.Drawing.Size(164, 21);
+            this.combo_IdDoctor.TabIndex = 11;
             this.combo_IdDoctor.SelectedIndexChanged += new System.EventHandler(this.combo_IdDoctor_SelectedIndexChanged);
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
+            this.label3.Location = new System.Drawing.Point(248, 70);
             this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 23);
+            this.label3.TabIndex = 10;
             // 
             // combo_IdHospital
             // 
             this.combo_IdHospital.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_IdHospital.FormattingEnabled = true;
-            resources.ApplyResources(this.combo_IdHospital, "combo_IdHospital");
+            this.combo_IdHospital.Location = new System.Drawing.Point(12, 257);
             this.combo_IdHospital.Name = "combo_IdHospital";
+            this.combo_IdHospital.Size = new System.Drawing.Size(121, 21);
+            this.combo_IdHospital.TabIndex = 9;
             // 
             // label4
             // 
-            resources.ApplyResources(this.label4, "label4");
+            this.label4.Location = new System.Drawing.Point(0, 91);
             this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.TabIndex = 8;
             // 
             // txt_DescripcionOperacion
             // 
-            resources.ApplyResources(this.txt_DescripcionOperacion, "txt_DescripcionOperacion");
+            this.txt_DescripcionOperacion.Location = new System.Drawing.Point(-13, 103);
             this.txt_DescripcionOperacion.Name = "txt_DescripcionOperacion";
+            this.txt_DescripcionOperacion.Size = new System.Drawing.Size(100, 20);
+            this.txt_DescripcionOperacion.TabIndex = 7;
             // 
             // btnAgregar
             // 
-            resources.ApplyResources(this.btnAgregar, "btnAgregar");
+            this.btnAgregar.Location = new System.Drawing.Point(46, 65);
             this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(118, 23);
+            this.btnAgregar.TabIndex = 6;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnAtras
             // 
-            resources.ApplyResources(this.btnAtras, "btnAtras");
+            this.btnAtras.Location = new System.Drawing.Point(46, 100);
             this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(75, 23);
+            this.btnAtras.TabIndex = 5;
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // label5
             // 
-            resources.ApplyResources(this.label5, "label5");
+            this.label5.Location = new System.Drawing.Point(9, 91);
             this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.TabIndex = 4;
             // 
             // input_FechaContrato
             // 
-            resources.ApplyResources(this.input_FechaContrato, "input_FechaContrato");
+            this.input_FechaContrato.Location = new System.Drawing.Point(12, 231);
             this.input_FechaContrato.Name = "input_FechaContrato";
+            this.input_FechaContrato.Size = new System.Drawing.Size(200, 20);
+            this.input_FechaContrato.TabIndex = 3;
             // 
             // txt_ValorContrato
             // 
-            resources.ApplyResources(this.txt_ValorContrato, "txt_ValorContrato");
+            this.txt_ValorContrato.Location = new System.Drawing.Point(0, 94);
             this.txt_ValorContrato.Name = "txt_ValorContrato";
+            this.txt_ValorContrato.Size = new System.Drawing.Size(100, 20);
+            this.txt_ValorContrato.TabIndex = 2;
             // 
             // label6
             // 
-            resources.ApplyResources(this.label6, "label6");
+            this.label6.Location = new System.Drawing.Point(21, 126);
             this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.TabIndex = 1;
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
+            this.label7.Location = new System.Drawing.Point(21, 195);
             this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 23);
+            this.label7.TabIndex = 0;
             // 
             // ventanaAgregarOperacion
             // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.ClientSize = new System.Drawing.Size(561, 437);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_ValorContrato);

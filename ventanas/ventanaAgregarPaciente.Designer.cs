@@ -45,6 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtOtraPatologia = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -189,19 +190,30 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(80, 376);
+            this.button1.Location = new System.Drawing.Point(157, 379);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 47);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Agregar Doctor";
+            this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(36, 379);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 47);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Atras";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ventanaAgregarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(312, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtOtraPatologia);
@@ -249,5 +261,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtOtraPatologia;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
