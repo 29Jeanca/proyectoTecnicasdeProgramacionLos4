@@ -46,7 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clases\conexionBDJ.cs" />
+    <Compile Include="clases\conexionBD.cs" />
+    <Compile Include="clases\Hospital.cs" />
+    <Compile Include="clases\Visitas_Post_Operatorias.cs" />
+    <Compile Include="ventanas\ventanaAgregarHospitales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanaAgregarHospitales.Designer.cs">
+      <DependentUpon>ventanaAgregarHospitales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventanas\ventanaAgregarVisitasPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanaAgregarVisitasPost.Designer.cs">
+      <DependentUpon>ventanaAgregarVisitasPost.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\ventanaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +84,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ventanas\ventanaAgregarHospitales.resx">
+      <DependentUpon>ventanaAgregarHospitales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanaAgregarVisitasPost.resx">
+      <DependentUpon>ventanaAgregarVisitasPost.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaInicio.resx">
       <DependentUpon>ventanaInicio.cs</DependentUpon>
     </EmbeddedResource>

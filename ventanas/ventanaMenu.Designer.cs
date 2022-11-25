@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ventanaMenu));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAgregarDoctor = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnAgregarVisita = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,17 +49,50 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 37);
+            this.label2.Location = new System.Drawing.Point(86, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ventana agregar Doctor";
             // 
+            // btnAgregarDoctor
+            // 
+            this.btnAgregarDoctor.Location = new System.Drawing.Point(89, 61);
+            this.btnAgregarDoctor.Name = "btnAgregarDoctor";
+            this.btnAgregarDoctor.Size = new System.Drawing.Size(118, 55);
+            this.btnAgregarDoctor.TabIndex = 2;
+            this.btnAgregarDoctor.Text = "Agregar Doctor";
+            this.btnAgregarDoctor.UseVisualStyleBackColor = true;
+            this.btnAgregarDoctor.Click += new System.EventHandler(this.btnAgregarDoctor_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(53, 156);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(190, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Ventana agregar Visita Post Operatoria";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnAgregarVisita
+            // 
+            this.btnAgregarVisita.Location = new System.Drawing.Point(90, 198);
+            this.btnAgregarVisita.Name = "btnAgregarVisita";
+            this.btnAgregarVisita.Size = new System.Drawing.Size(118, 55);
+            this.btnAgregarVisita.TabIndex = 4;
+            this.btnAgregarVisita.Text = "Agregar Visita Post Operatoria";
+            this.btnAgregarVisita.UseVisualStyleBackColor = true;
+            this.btnAgregarVisita.Click += new System.EventHandler(this.btnAgregarVisita_Click);
+            // 
             // ventanaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 450);
+            this.ClientSize = new System.Drawing.Size(298, 450);
+            this.Controls.Add(this.btnAgregarVisita);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnAgregarDoctor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -73,5 +109,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnAgregarDoctor;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnAgregarVisita;
     }
 }
