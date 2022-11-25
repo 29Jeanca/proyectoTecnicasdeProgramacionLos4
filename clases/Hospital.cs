@@ -42,7 +42,7 @@ namespace proyectoHospitalesGrupoLos4.clases
             int retorna;
 
             SqlConnection conexion = conexionBD.abrirConexion();
-            string cadenaBD = "INSERT INTO Hospital(valorFiscal,areaTerreno,direccionExacta,provincia,canton,distrito,cantidadNiveles,tiposCirugia,anioConstruccion) values('" + hospital.valorFiscal + "','" + hospital.areaTerreno + "','" + hospital.direccionExacta + "','" + hospital.provincia + "','" + hospital.canton + "','" + hospital.distrito + "','" + hospital.cantidadNiveles + "','" + hospital.tiposCirugia + "','" + hospital.anioConstruccion + "')";
+            string cadenaBD = "INSERT INTO Hospital(valorFiscal,areaTerreno,direccionExacta,provincia,canton,distrito,cantidadNiveles,color,cantidadConsultorios,tiposCirugia,anioConstruccion) values('" + hospital.valorFiscal + "','" + hospital.areaTerreno + "','" + hospital.direccionExacta + "','" + hospital.provincia + "','" + hospital.canton + "','" + hospital.distrito + "','" + hospital.cantidadNiveles + "','"+hospital.color+"','"+hospital.cantidadConsultorios+"','" + hospital.tiposCirugia + "','" + hospital.anioConstruccion + "')";
             SqlCommand comando = new SqlCommand(cadenaBD, conexion);
             retorna = comando.ExecuteNonQuery();
 

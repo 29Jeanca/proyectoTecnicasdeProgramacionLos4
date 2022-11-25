@@ -33,7 +33,7 @@ namespace proyectoHospitalesGrupoLos4.clases
             int retorna = 0;
             using (SqlConnection conexion = conexionBD.abrirConexion())
             {
-                string query = "insert into Operacion (idPaciente, idDoctor, idHospital, descripcion) values('" + operacion.idPaciente + "', '" + operacion.idDoctor + "', " + operacion.idHospital + ", '" + operacion.descripcion + "')";
+                string query = "INSERT INTO Operacion (idPaciente, idDoctor, idHospital, descripcion) values('" + operacion.idPaciente + "', '" + operacion.idDoctor + "', " + operacion.idHospital + ", '" + operacion.descripcion + "')";
                 SqlCommand comando = new SqlCommand(query, conexion);
                 retorna = comando.ExecuteNonQuery();
             }

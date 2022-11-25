@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace proyectoHospitalesGrupoLos4.clases
 {
-    internal class Doctor
+    public class Doctor
     {
         public string nombre { get; set; }
         public string apellido { get; set; }
@@ -34,7 +34,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         {
             using (SqlConnection conexion = conexionBD.abrirConexion())
             {
-                string query = "insert into Doctor (nombre, apellido, telefono,correo,especialidad,gradoAcademico,estadoCivil,idHospital) values('" + doctor.nombre + "', '" + doctor.apellido + "', '" + doctor.telefono + "', '" + doctor.correo + "','" + doctor.especialidad + "', '" + doctor.gradoAcademico + "','" + doctor.estadoCivil + "', '" + doctor.idHospital + "')";
+                string query = "INSERT INTO Doctor (nombre, apellido, telefono,correo,especialidad,gradoAcademico,estadoCivil,idHospital) values('" + doctor.nombre + "', '" + doctor.apellido + "', '" + doctor.telefono + "', '" + doctor.correo + "','" + doctor.especialidad + "', '" + doctor.gradoAcademico + "','" + doctor.estadoCivil + "', '" + doctor.idHospital + "')";
                 SqlCommand comando = new SqlCommand(query, conexion);
                 comando.ExecuteNonQuery();
             }

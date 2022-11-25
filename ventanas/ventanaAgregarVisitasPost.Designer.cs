@@ -226,6 +226,7 @@
             this.Controls.Add(this.combo_IdHospital);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
