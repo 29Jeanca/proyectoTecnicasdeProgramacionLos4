@@ -110,6 +110,12 @@
     <Compile Include="ventanas\ventanaMenu.Designer.cs">
       <DependentUpon>ventanaMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ventanas\ventanaPrueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanaPrueba.Designer.cs">
+      <DependentUpon>ventanaPrueba.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaMenu.resx">
       <DependentUpon>ventanaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanaPrueba.resx">
+      <DependentUpon>ventanaPrueba.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
