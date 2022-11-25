@@ -186,6 +186,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ventanaAgregarInternacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ventanaAgregarInternacion";
             this.Load += new System.EventHandler(this.ventanaAgregarInternacion_Load);
             this.ResumeLayout(false);

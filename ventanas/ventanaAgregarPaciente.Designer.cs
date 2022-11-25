@@ -222,6 +222,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ventanaAgregarPaciente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ventanaAgregarPaciente";
             this.Load += new System.EventHandler(this.ventanaAgregarPaciente_Load);
             this.ResumeLayout(false);
