@@ -84,6 +84,12 @@
     <Compile Include="ventanas\ventanaAgregarPaciente.Designer.cs">
       <DependentUpon>ventanaAgregarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ventanas\VentanaAgregarSecretaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\VentanaAgregarSecretaria.Designer.cs">
+      <DependentUpon>VentanaAgregarSecretaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\ventanaAgregarVisitasPost.cs">
       <SubType>Form</SubType>
     </Compile>
