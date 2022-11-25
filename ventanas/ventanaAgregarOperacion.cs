@@ -32,30 +32,57 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             operacion.descripcion = txt_DescripcionOperacion.Text;
             operacion.fechaContrato = input_FechaContrato.Text;
 
-            
+            int contador = Operacion.agregarOperacion(operacion);
+            if (contador > 0)
+            {
+                MessageBox.Show("Operación registrada con exito");
+                txt_DescripcionOperacion.Text = "";
+                txt_ValorContrato.Text = "";
+            }
         }
 
         private void ventanaAgregarOperacion_Load(object sender, EventArgs e)
         {
-            SqlDataReader IdHospitalLector = conexionBD.traerInformacionDB("idHospital","-----",null,null);
-            SqlDataReader IdPacienteLector = conexionBD.traerInformacionDB("idPaciente", "-----", null, null);
-            SqlDataReader IdDoctorLector = conexionBD.traerInformacionDB("idDoctor", "--------", null, null);
+            SqlDataReader IdHospitalLector = conexionBD.traerInformacionDB("id","Hospital",null,null);
+            SqlDataReader IdPacienteLector = conexionBD.traerInformacionDB("id", "Paciente", null, null);
+            SqlDataReader IdDoctorLector = conexionBD.traerInformacionDB("id", "Doctor", null, null);
 
             while (IdHospitalLector.Read())
             {
-                combo_IdHospital.Items.Add(IdHospitalLector["idHospital"].ToString());
+                combo_IdHospital.Items.Add(IdHospitalLector["id"].ToString());
             }
             while (IdPacienteLector.Read())
             {
-                combo_IdHospital.Items.Add(IdPacienteLector["idHospital"].ToString());
+                combo_IdHospital.Items.Add(IdPacienteLector["id"].ToString());
             }
             while (IdDoctorLector.Read())
             {
-                combo_IdHospital.Items.Add(IdDoctorLector["idHospital"].ToString());
+                combo_IdHospital.Items.Add(IdDoctorLector["id"].ToString());
             }
+           
         }
 
         private void combo_IdDoctor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_ValorContrato_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

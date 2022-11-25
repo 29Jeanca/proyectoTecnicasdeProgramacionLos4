@@ -51,7 +51,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             int contador = Visitas_Post_Operatorias.agregarVisitas(visitasPost);
             if (contador > 0)
             {
-                MessageBox.Show("Visita almacenada con exito");
+                MessageBox.Show("Visita registrada con exito");
                 combo_IdHospital.Text = " ";
                 combo_IdPaciente.Text = " ";
                 combo_IdDoctor.Text = " ";
