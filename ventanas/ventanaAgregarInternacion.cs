@@ -61,7 +61,6 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             contrato.apellido = selectPaciente.Text.Split(' ')[2];
             if (selectHospital.Text != "" || selectDoctor.Text != "" || selectPaciente.Text != "" || txtValorContrato.Text != "")
             {
-                Internacion.agregarInternacion(internacion);
                 Contrato.agregarContrato(contrato);
                 Paciente.cambiarPacienteActivo(contrato.idPaciente);
             }

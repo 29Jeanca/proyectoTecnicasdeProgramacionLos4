@@ -72,13 +72,15 @@ namespace proyectoHospitalesGrupoLos4.ventanas
                 txt_ValorContrato.Text = "";
             }
         }
-
+        // Agregar cambiar a activo al crear la operacion, hacer validadcion para que solo aparezcan los que tengan activo falso
+        // revisar porque no aparecen todos los cirujanos
+        
         private void ventanaAgregarOperacion_Load(object sender, EventArgs e)
         {
             SqlDataReader IdHospitalLector = conexionBD.traerInformacionDB("id", "Hospital", null, null);
             SqlDataReader IdPacienteLector = conexionBD.traerInformacionDB("id,nombre,apellido", "Paciente", null, null);
             SqlDataReader doctorRender = conexionBD.traerInformacionDBDobleFiltro("nombre, id, apellido", "Doctor", "especialidad", "Cirujano", "idHospital", combo_IdHospital.Text);
-            SqlDataReader idCirugiaLector = conexionBD.traerInformacionDB("nombre", null, null, null);
+            SqlDataReader idCirugiaLector = conexionBD.traerInformacionDB("nombre", "Cirugia", null, null);
             while (IdHospitalLector.Read())
             {
                 combo_IdHospital.Items.Add(IdHospitalLector["id"].ToString());

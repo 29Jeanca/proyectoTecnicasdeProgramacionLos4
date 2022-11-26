@@ -241,6 +241,7 @@
             this.button7.Size = new System.Drawing.Size(122, 89);
             this.button7.TabIndex = 18;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label11
             // 

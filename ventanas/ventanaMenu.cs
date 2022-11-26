@@ -57,8 +57,8 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ventanaAgregarDoctor ventanaDoctor = new ventanaAgregarDoctor();
-            ventanaDoctor.Show();
+            ventanaAgregarHospitales ventanaHospital = new ventanaAgregarHospitales();
+            ventanaHospital.Show();
             this.Visible = false;
         }
 
@@ -83,6 +83,13 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         {
             VentanaAgregarSecretaria ventanaSecretaria = new VentanaAgregarSecretaria();
             ventanaSecretaria.Show();
+            this.Visible = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ventanaAgregarOperacion ventanaOperacion = new ventanaAgregarOperacion();
+            ventanaOperacion.Show();
             this.Visible = false;
         }
     }

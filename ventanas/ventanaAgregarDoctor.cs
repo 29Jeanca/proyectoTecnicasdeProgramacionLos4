@@ -21,6 +21,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         private void btnAgregarDoctor_Click(object sender, EventArgs e)
         {
             Doctor doctor = new Doctor();
+            doctor.idHospital = Convert.ToInt32(combo_IdHospital.Text);
             doctor.nombre = txt_NombreDoctor.Text;
             doctor.apellido = txt_ApellidoDoctor.Text;
             doctor.telefono = txt_TelefonoDoctor.Text;

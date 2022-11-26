@@ -38,7 +38,7 @@ namespace proyectoHospitalesGrupoLos4.clases
             int retorna;
            
             SqlConnection conexion = conexionBD.abrirConexion();
-            string cadenaBD = "INSERT INTO visitasPostOperatorias(idHospital,idPaciente,idDoctor,tipoVisita,estadoHerida,gasto,medicamento,fechaVisita) values(" + visitasOperatorias.idPaciente + "," + visitasOperatorias.idDoctor + "," + visitasOperatorias.idHospital + ",'" + visitasOperatorias.tipoVisita + "','" + visitasOperatorias.estadoHerida + "','" + visitasOperatorias.gasto + "','" + visitasOperatorias.gasto + "','" + visitasOperatorias.medicamento + "','" + visitasOperatorias.fechaVisita + "')";
+            string cadenaBD = "INSERT INTO visitasPostOperatorias(idHospital,idPaciente,idDoctor,tipoVisita,estadoHerida,gasto,medicamento,fechaVisita) values(" + visitasOperatorias.idHospital + "," + visitasOperatorias.idPaciente + "," + visitasOperatorias.idDoctor + ",'" + visitasOperatorias.tipoVisita + "','" + visitasOperatorias.estadoHerida + "','" + visitasOperatorias.gasto + "','" + visitasOperatorias.medicamento + "','" + visitasOperatorias.fechaVisita + "')";
             SqlCommand comando = new SqlCommand(cadenaBD, conexion);
             retorna=comando.ExecuteNonQuery();
 

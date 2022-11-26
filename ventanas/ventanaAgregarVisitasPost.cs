@@ -47,6 +47,8 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             visitasPost.tipoVisita = combo_TipoChequeo.Text;
             visitasPost.estadoHerida = combo_EstadoHerida.Text;
             visitasPost.medicamento = txt_Medicamentos.Text;
+            visitasPost.fechaVisita = input_FechaVisita.Text;
+            visitasPost.gasto = txtGasto.Text;
 
             int contador = Visitas_Post_Operatorias.agregarVisitas(visitasPost);
             if (contador > 0)
