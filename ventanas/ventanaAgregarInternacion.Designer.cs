@@ -48,24 +48,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 33);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
+            this.label1.Location = new System.Drawing.Point(28, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.Size = new System.Drawing.Size(53, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hospital";
             // 
             // selectHospital
             // 
+            this.selectHospital.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectHospital.FormattingEnabled = true;
-            this.selectHospital.Location = new System.Drawing.Point(31, 49);
+            this.selectHospital.Location = new System.Drawing.Point(31, 36);
             this.selectHospital.Name = "selectHospital";
             this.selectHospital.Size = new System.Drawing.Size(121, 21);
             this.selectHospital.TabIndex = 1;
             // 
             // selectPaciente
             // 
+            this.selectPaciente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectPaciente.FormattingEnabled = true;
-            this.selectPaciente.Location = new System.Drawing.Point(31, 89);
+            this.selectPaciente.Location = new System.Drawing.Point(31, 78);
             this.selectPaciente.Name = "selectPaciente";
             this.selectPaciente.Size = new System.Drawing.Size(121, 21);
             this.selectPaciente.TabIndex = 3;
@@ -73,16 +76,18 @@
             // LABBEL
             // 
             this.LABBEL.AutoSize = true;
-            this.LABBEL.Location = new System.Drawing.Point(28, 73);
+            this.LABBEL.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
+            this.LABBEL.Location = new System.Drawing.Point(28, 60);
             this.LABBEL.Name = "LABBEL";
-            this.LABBEL.Size = new System.Drawing.Size(49, 13);
+            this.LABBEL.Size = new System.Drawing.Size(51, 15);
             this.LABBEL.TabIndex = 2;
             this.LABBEL.Text = "Paciente";
             // 
             // selectDoctor
             // 
+            this.selectDoctor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectDoctor.FormattingEnabled = true;
-            this.selectDoctor.Location = new System.Drawing.Point(31, 129);
+            this.selectDoctor.Location = new System.Drawing.Point(31, 125);
             this.selectDoctor.Name = "selectDoctor";
             this.selectDoctor.Size = new System.Drawing.Size(121, 21);
             this.selectDoctor.TabIndex = 5;
@@ -91,31 +96,34 @@
             // Doctor
             // 
             this.Doctor.AutoSize = true;
-            this.Doctor.Location = new System.Drawing.Point(28, 113);
+            this.Doctor.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
+            this.Doctor.Location = new System.Drawing.Point(28, 106);
             this.Doctor.Name = "Doctor";
-            this.Doctor.Size = new System.Drawing.Size(39, 13);
+            this.Doctor.Size = new System.Drawing.Size(42, 15);
             this.Doctor.TabIndex = 4;
             this.Doctor.Text = "Doctor";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(31, 171);
+            this.txtDescripcion.Location = new System.Drawing.Point(31, 173);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(262, 166);
+            this.txtDescripcion.Size = new System.Drawing.Size(262, 138);
             this.txtDescripcion.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
             this.label2.Location = new System.Drawing.Point(28, 155);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.Size = new System.Drawing.Size(68, 15);
             this.label2.TabIndex = 7;
             this.label2.Text = "Descripcion";
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
             this.button1.Location = new System.Drawing.Point(178, 442);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 52);
@@ -127,15 +135,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 340);
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
+            this.label3.Location = new System.Drawing.Point(29, 320);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
+            this.label3.Size = new System.Drawing.Size(84, 15);
             this.label3.TabIndex = 9;
             this.label3.Text = "Valor contrato";
             // 
             // txtValorContrato
             // 
-            this.txtValorContrato.Location = new System.Drawing.Point(31, 356);
+            this.txtValorContrato.Location = new System.Drawing.Point(31, 339);
             this.txtValorContrato.Name = "txtValorContrato";
             this.txtValorContrato.Size = new System.Drawing.Size(138, 20);
             this.txtValorContrato.TabIndex = 10;
@@ -143,30 +152,34 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(175, 359);
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
+            this.label4.Location = new System.Drawing.Point(175, 343);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.Size = new System.Drawing.Size(47, 15);
             this.label4.TabIndex = 11;
             this.label4.Text = "Colones";
             // 
             // txtFechaContrato
             // 
-            this.txtFechaContrato.Location = new System.Drawing.Point(31, 401);
+            this.txtFechaContrato.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
+            this.txtFechaContrato.Location = new System.Drawing.Point(31, 391);
             this.txtFechaContrato.Name = "txtFechaContrato";
-            this.txtFechaContrato.Size = new System.Drawing.Size(200, 20);
+            this.txtFechaContrato.Size = new System.Drawing.Size(225, 21);
             this.txtFechaContrato.TabIndex = 12;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 385);
+            this.label5.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
+            this.label5.Location = new System.Drawing.Point(28, 369);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 13);
+            this.label5.Size = new System.Drawing.Size(100, 15);
             this.label5.TabIndex = 13;
             this.label5.Text = "Fecha de contrato";
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
             this.button2.Location = new System.Drawing.Point(49, 442);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 52);
@@ -195,11 +208,12 @@
             this.Controls.Add(this.LABBEL);
             this.Controls.Add(this.selectHospital);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ventanaAgregarInternacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ventanaAgregarInternacion";
+            this.Text = "Agregar Internacion";
             this.Load += new System.EventHandler(this.ventanaAgregarInternacion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

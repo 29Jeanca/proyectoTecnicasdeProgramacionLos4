@@ -34,8 +34,8 @@ namespace proyectoHospitalesGrupoLos4.clases
         {
             using (SqlConnection conexion = conexionBD.abrirConexion())
             {
-                string query = "INSERT INTO Doctor (nombre, apellido, telefono,correo,especialidad,gradoAcademico,estadoCivil,idHospital) values('" + doctor.nombre + "', '" + doctor.apellido + "', '" + doctor.telefono + "', '" + doctor.correo + "','" + doctor.especialidad + "', '" + doctor.gradoAcademico + "','" + doctor.estadoCivil + "', '" + doctor.idHospital + "')";
-                SqlCommand comando = new SqlCommand(query, conexion);
+                string cadenaBD = "INSERT INTO Doctor (nombre, apellido, telefono,correo,especialidad,gradoAcademico,estadoCivil,idHospital) values('" + doctor.nombre + "', '" + doctor.apellido + "', '" + doctor.telefono + "', '" + doctor.correo + "','" + doctor.especialidad + "', '" + doctor.gradoAcademico + "','" + doctor.estadoCivil + "', '" + doctor.idHospital + "')";
+                SqlCommand comando = new SqlCommand(cadenaBD, conexion);
                 comando.ExecuteNonQuery();
             }
             return 1;

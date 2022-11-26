@@ -151,6 +151,10 @@
             // 
             this.combo_EstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_EstadoCivil.FormattingEnabled = true;
+            this.combo_EstadoCivil.Items.AddRange(new object[] {
+            "Casado ",
+            "Soltero",
+            "Viudo"});
             this.combo_EstadoCivil.Location = new System.Drawing.Point(12, 321);
             this.combo_EstadoCivil.Name = "combo_EstadoCivil";
             this.combo_EstadoCivil.Size = new System.Drawing.Size(121, 21);

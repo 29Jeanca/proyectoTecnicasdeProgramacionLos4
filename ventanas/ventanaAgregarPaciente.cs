@@ -50,6 +50,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             paciente.nombre = txtNombre.Text;
             paciente.apellido = txtApellido.Text;
             paciente.telefono = txtTelefono.Text;
+            paciente.idHospital = Convert.ToInt32(selectHospital.Text);
             paciente.correo = txtCorreo.Text;
             paciente.estadoCivil = selectEstadoCivil.Text;
             if (selectPatologia.Text == "")
@@ -62,8 +63,24 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             }
             else { paciente.patologia = selectPatologia.Text; }
 
-            Paciente.agregarPaciente(paciente);
- 
+            int contador=Paciente.agregarPaciente(paciente);
+
+            if (contador > 0)
+            {
+                MessageBox.Show("Exito al registrar al paciente");
+                txtNombre.Text="";
+                txtApellido.Text="";
+                txtTelefono.Text = "";
+                txtCorreo.Text = "";
+                selectHospital.SelectedIndex = -1;
+                selectEstadoCivil.SelectedIndex=-1;
+                selectPatologia.SelectedIndex = -1;
+            }
+            else
+            {
+                MessageBox.Show("Error al registrar al paciente");
+            }
+        
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -71,6 +88,11 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             ventanaMenu menu = new ventanaMenu();
             menu.Show();
             this.Visible = false;
+        }
+
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

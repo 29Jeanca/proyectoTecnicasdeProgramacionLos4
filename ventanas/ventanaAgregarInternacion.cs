@@ -66,9 +66,22 @@ namespace proyectoHospitalesGrupoLos4.ventanas
                 Paciente.cambiarPacienteActivo(contrato.idPaciente);
             }
             else {
-                MessageBox.Show("faltan datos por digitar");
+                MessageBox.Show("Faltan datos por digitar");
             }
-            
+            int contador = Internacion.agregarInternacion(internacion);
+
+            if (contador > 0)
+            {
+                MessageBox.Show("Internación registrada con exito");
+                selectHospital.SelectedText = "";
+                selectDoctor.SelectedText = "";
+                selectPaciente.SelectedText = "";
+                txtDescripcion.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Error al registrar con el internamiento");
+            }
         }
 
         private void selectDoctor_SelectedIndexChanged(object sender, EventArgs e)
