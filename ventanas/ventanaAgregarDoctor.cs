@@ -57,5 +57,12 @@ namespace proyectoHospitalesGrupoLos4.ventanas
                 combo_IdHospital.Items.Add(idHospitalLector["id"].ToString());
             }
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            ventanaMenu menu = new ventanaMenu();
+            menu.Show();
+            this.Visible = false;
+        }
     }
 }
