@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clases\Cirugia.cs" />
     <Compile Include="clases\conexionBD.cs" />
     <Compile Include="clases\Contrato.cs" />
     <Compile Include="clases\Doctor.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="clases\Paciente.cs" />
     <Compile Include="clases\Pago.cs" />
     <Compile Include="clases\Patologia.cs" />
+    <Compile Include="clases\Secretaria.cs" />
     <Compile Include="clases\Visitas_Post_Operatorias.cs" />
     <Compile Include="ventanas\ventanaAgregarDoctor.cs">
       <SubType>Form</SubType>
