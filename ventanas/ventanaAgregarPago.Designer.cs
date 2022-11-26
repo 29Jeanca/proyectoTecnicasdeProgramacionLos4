@@ -54,7 +54,7 @@
             this.selectHospital.FormattingEnabled = true;
             this.selectHospital.Location = new System.Drawing.Point(12, 50);
             this.selectHospital.Name = "selectHospital";
-            this.selectHospital.Size = new System.Drawing.Size(121, 21);
+            this.selectHospital.Size = new System.Drawing.Size(191, 21);
             this.selectHospital.TabIndex = 0;
             this.selectHospital.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -82,7 +82,7 @@
             this.selectPaciente.FormattingEnabled = true;
             this.selectPaciente.Location = new System.Drawing.Point(12, 92);
             this.selectPaciente.Name = "selectPaciente";
-            this.selectPaciente.Size = new System.Drawing.Size(121, 21);
+            this.selectPaciente.Size = new System.Drawing.Size(191, 21);
             this.selectPaciente.TabIndex = 2;
             // 
             // txtNombre

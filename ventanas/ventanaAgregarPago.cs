@@ -1,5 +1,6 @@
 ﻿using proyectoHospitalesGrupoLos4.clases;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void ventanaAgregarPago_Load(object sender, EventArgs e)
         {
-            
+            ArrayList arrayList= new ArrayList();
             SqlDataReader hospitalRender = conexionBD.traerInformacionDB("id", "Hospital", null, null);
             while (hospitalRender.Read())
             {
@@ -35,7 +36,8 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             SqlDataReader contratoRender = conexionBD.traerInformacionDBConComparacion();
             while (contratoRender.Read()) 
             {
-                selectPaciente.Items.Add(contratoRender["id"] + " " + contratoRender["nombre"] + " " + contratoRender["apellido"] + "-" + contratoRender["valorRestante"] );
+                selectPaciente.Items.Add(contratoRender["id"] + " " +  contratoRender["nombre"] + " " + contratoRender["apellido"] + "-" + contratoRender["valorRestante"] );
+                arrayList.Add(contratoRender["idPaciente"] + " " + contratoRender["id"] + " " + contratoRender["valorRestante"]);
             }
             
         }
