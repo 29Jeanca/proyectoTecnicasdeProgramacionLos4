@@ -50,7 +50,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         public static SqlDataReader traerInformacionDBConComparacion()
         {
             SqlConnection conexion = abrirConexion();
-            string query = "SELECT id, nombre, apellido, valorRestante FROM Contrato WHERE valorRestante > 0;" ;
+            string query = "SELECT idPaciente, id , nombre, apellido, valorRestante FROM Contrato WHERE valorRestante > 0;" ;
             SqlCommand comando = new SqlCommand(query, conexion);
             SqlDataReader renderContratos = comando.ExecuteReader();
             return renderContratos;
