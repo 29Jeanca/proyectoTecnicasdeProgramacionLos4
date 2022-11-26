@@ -19,8 +19,8 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void btnAgregarDoctor_Click(object sender, EventArgs e)
         {
-            ventanaAgregarHospitales v_AgregarHospitales = new ventanaAgregarHospitales();
-            v_AgregarHospitales.Show();
+            ventanaAgregarDoctor ventanaDoctor = new ventanaAgregarDoctor();
+            ventanaDoctor.Show();
             this.Visible = false;
         }
 
@@ -66,6 +66,23 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         {
             ventanaAgregarPago ventanaPago = new ventanaAgregarPago();
             ventanaPago.Show(); 
+            this.Visible = false;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarSecretaria_Click(object sender, EventArgs e)
+        {
+            VentanaAgregarSecretaria ventanaSecretaria = new VentanaAgregarSecretaria();
+            ventanaSecretaria.Show();
             this.Visible = false;
         }
     }

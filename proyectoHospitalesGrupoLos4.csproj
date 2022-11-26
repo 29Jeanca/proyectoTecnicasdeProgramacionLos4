@@ -135,6 +135,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ventanas\ventanaAgregarDoctor.resx">
+      <DependentUpon>ventanaAgregarDoctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaAgregarHospitales.resx">
       <DependentUpon>ventanaAgregarHospitales.cs</DependentUpon>
     </EmbeddedResource>

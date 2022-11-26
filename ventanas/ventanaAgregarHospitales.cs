@@ -61,8 +61,8 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            ventanaMenu ventana_Menu = new ventanaMenu();
-            ventana_Menu.Show();
+            ventanaMenu menu = new ventanaMenu();
+            menu.Show();
             this.Visible = false;
         }
     }
