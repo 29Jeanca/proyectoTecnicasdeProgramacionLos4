@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace proyectoHospitalesGrupoLos4.clases
 {
@@ -13,7 +14,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         {
             string rutaJean = "Data Source=JEANCA;Initial Catalog=proyectoHospitales;Integrated Security=True";
             string rutaMiguel = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ProjectTecnicas;Data Source=MIGUELA02";
-            SqlConnection conexion = new SqlConnection(rutaJean);
+            SqlConnection conexion = new SqlConnection(rutaMiguel);
             conexion.Open();
             return conexion;
         }
@@ -45,6 +46,14 @@ namespace proyectoHospitalesGrupoLos4.clases
             SqlCommand comando = new SqlCommand(query, conexion);
             SqlDataReader renderDoctores = comando.ExecuteReader();
             return renderDoctores;
+        }
+        public static SqlDataReader traerInformacionDBConComparacion()
+        {
+            SqlConnection conexion = abrirConexion();
+            string query = "SELECT id, nombre, apellido, valorRestante FROM Contrato WHERE valorRestante > 0;" ;
+            SqlCommand comando = new SqlCommand(query, conexion);
+            SqlDataReader renderContratos = comando.ExecuteReader();
+            return renderContratos;
         }
         public static int generadorDeNumerosRandoms()
         {

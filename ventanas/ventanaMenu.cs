@@ -61,5 +61,12 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             ventanaDoctor.Show();
             this.Visible = false;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ventanaAgregarPago ventanaPago = new ventanaAgregarPago();
+            ventanaPago.Show(); 
+            this.Visible = false;
+        }
     }
 }

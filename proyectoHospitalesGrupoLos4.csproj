@@ -53,6 +53,7 @@
     <Compile Include="clases\Internacion.cs" />
     <Compile Include="clases\Operacion.cs" />
     <Compile Include="clases\Paciente.cs" />
+    <Compile Include="clases\Pago.cs" />
     <Compile Include="clases\Patologia.cs" />
     <Compile Include="clases\Visitas_Post_Operatorias.cs" />
     <Compile Include="ventanas\ventanaAgregarDoctor.cs">
@@ -84,6 +85,12 @@
     </Compile>
     <Compile Include="ventanas\ventanaAgregarPaciente.Designer.cs">
       <DependentUpon>ventanaAgregarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ventanas\ventanaAgregarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanaAgregarPago.Designer.cs">
+      <DependentUpon>ventanaAgregarPago.cs</DependentUpon>
     </Compile>
     <Compile Include="ventanas\VentanaAgregarSecretaria.cs">
       <SubType>Form</SubType>
@@ -137,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaAgregarPaciente.resx">
       <DependentUpon>ventanaAgregarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanaAgregarPago.resx">
+      <DependentUpon>ventanaAgregarPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaAgregarVisitasPost.resx">
       <DependentUpon>ventanaAgregarVisitasPost.cs</DependentUpon>
