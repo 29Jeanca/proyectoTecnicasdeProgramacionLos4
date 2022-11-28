@@ -52,6 +52,8 @@
             this.input_CantidadConsultorios = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.btnAtras = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.input_CantidadNiveles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.input_CantidadConsultorios)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +75,7 @@
             this.txt_ValorFiscal.Name = "txt_ValorFiscal";
             this.txt_ValorFiscal.Size = new System.Drawing.Size(305, 20);
             this.txt_ValorFiscal.TabIndex = 1;
+            this.txt_ValorFiscal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ValorFiscal_KeyPress);
             // 
             // label2
             // 
@@ -87,7 +90,7 @@
             // txt_AreaTerreno
             // 
             this.txt_AreaTerreno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_AreaTerreno.Location = new System.Drawing.Point(16, 68);
+            this.txt_AreaTerreno.Location = new System.Drawing.Point(19, 71);
             this.txt_AreaTerreno.Name = "txt_AreaTerreno";
             this.txt_AreaTerreno.Size = new System.Drawing.Size(305, 20);
             this.txt_AreaTerreno.TabIndex = 3;
@@ -175,6 +178,7 @@
             this.txt_TiposCirugia.Name = "txt_TiposCirugia";
             this.txt_TiposCirugia.Size = new System.Drawing.Size(302, 45);
             this.txt_TiposCirugia.TabIndex = 16;
+            this.txt_TiposCirugia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_TiposCirugia_KeyPress);
             // 
             // label9
             // 
@@ -645,6 +649,7 @@
             this.txt_Color.Name = "txt_Color";
             this.txt_Color.Size = new System.Drawing.Size(305, 20);
             this.txt_Color.TabIndex = 23;
+            this.txt_Color.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Color_KeyPress);
             // 
             // label10
             // 
@@ -683,11 +688,35 @@
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.SystemColors.Info;
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label12.Location = new System.Drawing.Point(231, 71);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 15);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "metros cuadrados";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.SystemColors.Info;
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label13.Location = new System.Drawing.Point(273, 27);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(47, 15);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Colones";
+            // 
             // ventanaAgregarHospitales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(338, 541);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.input_CantidadConsultorios);
@@ -752,5 +781,7 @@
         private System.Windows.Forms.NumericUpDown input_CantidadConsultorios;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }

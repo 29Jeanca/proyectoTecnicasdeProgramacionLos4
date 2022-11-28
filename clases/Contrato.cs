@@ -35,7 +35,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         {
             using (SqlConnection conexion = conexionBD.abrirConexion())
             {
-                string query = "insert into Contrato (idPaciente, idHospital, codigoContrato, valorContrato, valorRestante, fechaContrato, nombre, apellido) values('" + contrato.idPaciente + "', " + contrato.idHospital + ", '" + contrato.codigoContrato + "', " + contrato.valorContrato + ", " + contrato.valorRestante + ", '"+contrato.fechaContrato+"', '"+contrato.nombre+"', '"+contrato.apellido+"')";
+                string query = "INSERT INTO Contrato (idPaciente, idHospital, codigoContrato, valorContrato, valorRestante, fechaContrato, nombre, apellido) values('" + contrato.idPaciente + "', " + contrato.idHospital + ", '" + contrato.codigoContrato + "', " + contrato.valorContrato + ", " + contrato.valorRestante + ", '"+contrato.fechaContrato+"', '"+contrato.nombre+"', '"+contrato.apellido+"')";
                 SqlCommand comando = new SqlCommand(query, conexion);
                 comando.ExecuteNonQuery();
             }
@@ -51,7 +51,6 @@ namespace proyectoHospitalesGrupoLos4.clases
                     string query = "UPDATE Contrato SET valorRestante = "+total+" WHERE id = '"+id+"'";
                     SqlCommand comando = new SqlCommand(query, conexion);
                     comando.ExecuteReader();
-                    MessageBox.Show(total + "");
                 }
                 return true;
             }

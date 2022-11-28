@@ -48,13 +48,14 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             internacion.idPaciente = Convert.ToInt32(selectPaciente.Text.Split(' ')[0]);
             internacion.idDoctor = Convert.ToInt32(selectDoctor.Text.Split(' ')[0]);
             internacion.descripcion = txtDescripcion.Text;
-            
+
+            DateTime thisDay = DateTime.Today;
 
             Contrato contrato = new Contrato();
             contrato.idHospital = Convert.ToInt32(selectHospital.Text);
             contrato.idPaciente = Convert.ToInt32(selectPaciente.Text.Split(' ')[0]);
             contrato.valorContrato = Convert.ToDouble(txtValorContrato.Text);
-            contrato.fechaContrato = txtFechaContrato.Text;
+            contrato.fechaContrato = thisDay.ToString("D");
             contrato.valorRestante = Convert.ToDouble(txtValorContrato.Text);
             contrato.codigoContrato = "INT" + conexionBD.generadorDeNumerosRandoms();
             contrato.nombre = selectPaciente.Text.Split(' ')[1];
@@ -72,9 +73,9 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             if (contador > 0)
             {
                 MessageBox.Show("Internación registrada con exito");
-                selectHospital.SelectedText = "";
-                selectDoctor.SelectedText = "";
-                selectPaciente.SelectedText = "";
+                selectHospital.SelectedIndex = -1;
+                selectDoctor.SelectedIndex = -1;
+                selectPaciente.SelectedIndex = -1;
                 txtDescripcion.Text = "";
             }
             else
@@ -94,6 +95,16 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             ventanaMenu menu = new ventanaMenu();
             menu.Show();
             this.Visible = false;
+        }
+
+        private void txtDescripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescripcion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+         
         }
     }
 }

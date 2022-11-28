@@ -44,9 +44,9 @@ namespace proyectoHospitalesGrupoLos4.ventanas
                 txt_ValorFiscal.Text="";
                 txt_AreaTerreno.Text = "";
                  txt_DireccionExacta.Text = "";
-                combo_Provincia.Text = "";
-                combo_Canton.Text = "";
-                combo_Distrito.Text = "";
+                combo_Provincia.SelectedIndex = -1;
+                combo_Canton.SelectedIndex = -1;
+                combo_Distrito.SelectedIndex = -1;
                  input_CantidadNiveles.Value=0;
                 input_CantidadConsultorios.Value = 0;
                  txt_Color.Text = "";
@@ -64,6 +64,36 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             ventanaMenu menu = new ventanaMenu();
             menu.Show();
             this.Visible = false;
+        }
+
+        private void txt_Color_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txt_TiposCirugia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txt_ValorFiscal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite números", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            e.Handled = true;
+            return;
         }
     }
     }

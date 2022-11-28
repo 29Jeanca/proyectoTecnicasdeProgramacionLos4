@@ -42,7 +42,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             }
             else
             { 
-                operacion.descripcion = combo_TipoCirugia.Text; 
+                operacion.descripcion = combo_TipoCirugia.Text;
             }
             Contrato contrato = new Contrato();
             contrato.idHospital = Convert.ToInt32(combo_IdHospital.Text);
@@ -53,6 +53,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             contrato.codigoContrato = "CIR" + conexionBD.generadorDeNumerosRandoms();
             contrato.nombre = combo_IdPaciente.Text.Split(' ')[1];
             contrato.apellido = combo_IdPaciente.Text.Split(' ')[2];
+            SqlCommand comando = new SqlCommand("UPDATE Paciente SET activo='True' WHERE id='" + combo_IdPaciente + "'");
             if (combo_IdHospital.Text != "" || combo_IdDoctor.Text != "" || combo_IdPaciente.Text != "" || txt_ValorContrato.Text != "")
             {
                 Contrato.agregarContrato(contrato);
@@ -70,15 +71,21 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             {
                 MessageBox.Show("Operación registrada con exito");
                 txt_ValorContrato.Text = "";
+                combo_IdPaciente.SelectedIndex = -1;
+                combo_IdDoctor.SelectedIndex = -1;
+                combo_TipoCirugia.SelectedIndex = -1;
+                txt_TipoCirugia.Text = "";
             }
         }
+
+
         // Agregar cambiar a activo al crear la operacion, hacer validadcion para que solo aparezcan los que tengan activo falso
         // revisar porque no aparecen todos los cirujanos
         
         private void ventanaAgregarOperacion_Load(object sender, EventArgs e)
         {
             SqlDataReader IdHospitalLector = conexionBD.traerInformacionDB("id", "Hospital", null, null);
-            SqlDataReader IdPacienteLector = conexionBD.traerInformacionDB("id,nombre,apellido", "Paciente", null, null);
+            SqlDataReader IdPacienteLector = conexionBD.traerInformacionDB("id,nombre,apellido", "Paciente", "activo", "false");
             SqlDataReader doctorRender = conexionBD.traerInformacionDBDobleFiltro("nombre, id, apellido", "Doctor", "especialidad", "Cirujano", "idHospital", combo_IdHospital.Text);
             SqlDataReader idCirugiaLector = conexionBD.traerInformacionDB("nombre", "Cirugia", null, null);
             while (IdHospitalLector.Read())
@@ -103,6 +110,20 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         private void combo_IdDoctor_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void combo_TipoCirugia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (combo_TipoCirugia.SelectedIndex >= 0)
+            {
+                txt_TipoCirugia.Enabled = false;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            combo_TipoCirugia.SelectedIndex = -1;
+            txt_TipoCirugia.Enabled = true;
         }
     }
 }

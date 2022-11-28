@@ -60,6 +60,7 @@
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(169, 20);
             this.txt_Nombre.TabIndex = 2;
+            this.txt_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nombre_KeyPress);
             // 
             // txt_Apellido
             // 
@@ -67,6 +68,7 @@
             this.txt_Apellido.Name = "txt_Apellido";
             this.txt_Apellido.Size = new System.Drawing.Size(169, 20);
             this.txt_Apellido.TabIndex = 3;
+            this.txt_Apellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Apellido_KeyPress);
             // 
             // btnAgregar
             // 

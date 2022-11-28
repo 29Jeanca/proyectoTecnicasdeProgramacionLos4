@@ -168,6 +168,7 @@
             this.txt_Medicamentos.Name = "txt_Medicamentos";
             this.txt_Medicamentos.Size = new System.Drawing.Size(198, 52);
             this.txt_Medicamentos.TabIndex = 11;
+            this.txt_Medicamentos.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Medicamentos_KeyUp);
             // 
             // label7
             // 
@@ -213,6 +214,7 @@
             this.txtGasto.Name = "txtGasto";
             this.txtGasto.Size = new System.Drawing.Size(161, 21);
             this.txtGasto.TabIndex = 16;
+            this.txtGasto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGasto_KeyPress);
             // 
             // label8
             // 

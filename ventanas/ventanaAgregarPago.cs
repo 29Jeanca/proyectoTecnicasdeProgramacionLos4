@@ -77,8 +77,12 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             else {
                 MessageBox.Show("El monto a pagar es " + valorRestante + ", por favor digite un monto valido");
             }
-            
-            
+            txtNombre.Text = "";
+            txtApellido.Text = "";
+            txtOtraCirugia.Text = "";
+            txtPago.Text = "";
+            selectHospital.SelectedIndex = -1;
+            selectPaciente.SelectedIndex = -1;
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -88,7 +92,10 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-
+            if (combo_TipoCirugia.SelectedIndex >= 0)
+            {
+                txtOtraCirugia.Enabled = false;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -96,6 +103,54 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             ventanaMenu menu = new ventanaMenu();
             menu.Show();
             this.Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtOtraCirugia.Enabled = true;
+            combo_TipoCirugia.SelectedIndex = -1;
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtOtraCirugia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtPago_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite números", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+            
+
         }
     }
 }

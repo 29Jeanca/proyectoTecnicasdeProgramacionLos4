@@ -35,14 +35,14 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             if (contador > 0)
             {
                 MessageBox.Show("Doctor guardado con exito");
-                combo_IdHospital.Text = "";
+                combo_IdHospital.SelectedIndex = -1;
                 txt_NombreDoctor.Text = "";
                 txt_ApellidoDoctor.Text = "";
                 txt_TelefonoDoctor.Text = "";
                 txt_CorreoDoctor.Text = "";
-                combo_EspecialidadDoctor.Text = "";
-                combo_GradoAcademico.Text = "";
-                combo_EstadoCivil.Text = "";
+                combo_EspecialidadDoctor.SelectedIndex=-1;
+                combo_GradoAcademico.SelectedIndex = -1;
+                combo_EstadoCivil.SelectedIndex = -1;
             }
             else
             {
@@ -64,6 +64,48 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             ventanaMenu menu = new ventanaMenu();
             menu.Show();
             this.Visible = false;
+        }
+
+        private void txt_TelefonoDoctor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_NombreDoctor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_NombreDoctor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txt_ApellidoDoctor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+    
+
+        private void txt_TelefonoDoctor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Este campo solo admite números", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+           
         }
     }
 }

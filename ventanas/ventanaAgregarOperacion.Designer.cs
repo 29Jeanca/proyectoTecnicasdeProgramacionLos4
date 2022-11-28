@@ -46,6 +46,8 @@
             this.combo_TipoCirugia = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_TipoCirugia = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // combo_IdPaciente
@@ -197,6 +199,7 @@
             this.combo_TipoCirugia.Name = "combo_TipoCirugia";
             this.combo_TipoCirugia.Size = new System.Drawing.Size(121, 21);
             this.combo_TipoCirugia.TabIndex = 16;
+            this.combo_TipoCirugia.SelectedIndexChanged += new System.EventHandler(this.combo_TipoCirugia_SelectedIndexChanged);
             // 
             // label9
             // 
@@ -214,6 +217,24 @@
             this.txt_TipoCirugia.Size = new System.Drawing.Size(167, 20);
             this.txt_TipoCirugia.TabIndex = 18;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(158, 223);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(47, 22);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Reset";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(179, 227);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(0, 13);
+            this.label10.TabIndex = 20;
+            // 
             // ventanaAgregarOperacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,6 +243,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(290, 456);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_TipoCirugia);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.combo_TipoCirugia);
@@ -271,5 +294,7 @@
         private System.Windows.Forms.ComboBox combo_TipoCirugia;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_TipoCirugia;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label10;
     }
 }

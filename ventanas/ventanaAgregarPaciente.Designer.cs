@@ -46,6 +46,7 @@
             this.txtOtraPatologia = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -74,6 +75,7 @@
             this.txtNombre.Size = new System.Drawing.Size(242, 20);
             this.txtNombre.TabIndex = 3;
             this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label2
             // 
@@ -102,6 +104,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(242, 20);
             this.txtApellido.TabIndex = 5;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // label4
             // 
@@ -137,6 +140,7 @@
             this.txtTelefono.Size = new System.Drawing.Size(242, 20);
             this.txtTelefono.TabIndex = 9;
             this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // selectEstadoCivil
             // 
@@ -176,6 +180,7 @@
             this.selectPatologia.Name = "selectPatologia";
             this.selectPatologia.Size = new System.Drawing.Size(121, 21);
             this.selectPatologia.TabIndex = 14;
+            this.selectPatologia.SelectedIndexChanged += new System.EventHandler(this.selectPatologia_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -203,6 +208,7 @@
             this.txtOtraPatologia.Name = "txtOtraPatologia";
             this.txtOtraPatologia.Size = new System.Drawing.Size(242, 20);
             this.txtOtraPatologia.TabIndex = 15;
+            this.txtOtraPatologia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOtraPatologia_KeyPress);
             // 
             // button1
             // 
@@ -226,11 +232,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(157, 319);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(50, 23);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Reset";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // ventanaAgregarPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 459);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
@@ -281,5 +298,6 @@
         private System.Windows.Forms.TextBox txtOtraPatologia;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

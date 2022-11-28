@@ -40,8 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtValorContrato = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtFechaContrato = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -110,6 +108,8 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(262, 138);
             this.txtDescripcion.TabIndex = 6;
+            this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
+            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescripcion_KeyPress);
             // 
             // label2
             // 
@@ -124,7 +124,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
-            this.button1.Location = new System.Drawing.Point(178, 442);
+            this.button1.Location = new System.Drawing.Point(190, 400);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 52);
             this.button1.TabIndex = 8;
@@ -159,28 +159,10 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Colones";
             // 
-            // txtFechaContrato
-            // 
-            this.txtFechaContrato.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
-            this.txtFechaContrato.Location = new System.Drawing.Point(31, 391);
-            this.txtFechaContrato.Name = "txtFechaContrato";
-            this.txtFechaContrato.Size = new System.Drawing.Size(225, 21);
-            this.txtFechaContrato.TabIndex = 12;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
-            this.label5.Location = new System.Drawing.Point(28, 369);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 15);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Fecha de contrato";
-            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
-            this.button2.Location = new System.Drawing.Point(49, 442);
+            this.button2.Location = new System.Drawing.Point(32, 400);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 52);
             this.button2.TabIndex = 14;
@@ -194,8 +176,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 506);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtFechaContrato);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtValorContrato);
             this.Controls.Add(this.label3);
@@ -234,8 +214,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtValorContrato;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker txtFechaContrato;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button2;
     }
 }

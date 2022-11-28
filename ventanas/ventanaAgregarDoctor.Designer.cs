@@ -85,6 +85,8 @@
             this.txt_NombreDoctor.Name = "txt_NombreDoctor";
             this.txt_NombreDoctor.Size = new System.Drawing.Size(198, 20);
             this.txt_NombreDoctor.TabIndex = 3;
+            this.txt_NombreDoctor.TextChanged += new System.EventHandler(this.txt_NombreDoctor_TextChanged);
+            this.txt_NombreDoctor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_NombreDoctor_KeyPress);
             // 
             // label3
             // 
@@ -102,6 +104,7 @@
             this.txt_ApellidoDoctor.Name = "txt_ApellidoDoctor";
             this.txt_ApellidoDoctor.Size = new System.Drawing.Size(198, 20);
             this.txt_ApellidoDoctor.TabIndex = 5;
+            this.txt_ApellidoDoctor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ApellidoDoctor_KeyPress);
             // 
             // label4
             // 
@@ -136,6 +139,8 @@
             this.txt_TelefonoDoctor.Name = "txt_TelefonoDoctor";
             this.txt_TelefonoDoctor.Size = new System.Drawing.Size(198, 20);
             this.txt_TelefonoDoctor.TabIndex = 9;
+            this.txt_TelefonoDoctor.TextChanged += new System.EventHandler(this.txt_TelefonoDoctor_TextChanged);
+            this.txt_TelefonoDoctor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_TelefonoDoctor_KeyPress);
             // 
             // label6
             // 
