@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace proyectoHospitalesGrupoLos4.ventanas
 {
-    public partial class ventanaPrueba : Form
+    public partial class ventanaConsulta : Form
     {
-        public ventanaPrueba()
+        public ventanaConsulta()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            VentanaConsultarInternacion consultaInternacion = new VentanaConsultarInternacion();
+            consultaInternacion.Show();
+            this.Visible = false;
         }
     }
 }

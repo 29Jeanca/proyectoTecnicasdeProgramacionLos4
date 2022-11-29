@@ -531,7 +531,7 @@
   <data name="btnRegistrarPago.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
-        MQAAATEBRKuknQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAg9SURBVHhe7Zl7
+        MAAAATABluxGeQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAg9SURBVHhe7Zl7
         UFRVHMepmZpqamqmv/qj/mmmqak0IkwWWSFE9kE8fKVlM4alZkJKOQoFrimZsQImKAvIggqLGD7YxUeP
         oZlSHpLUOM5U44I2U5lFYU5YyvLrnL3nwn387u5d9l6DGX4zn3HOvfec8/1+uffcc9cIWvHOtjsSKnpy
         n9vV8w2hn/DHeCNx55k/E0o6rxuL2mEEe8dwXFHHsNHeOWgs6TweX9J2n99QKBVTfOpOMsFJAoxnZpae
@@ -601,7 +601,7 @@
   <data name="button7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
-        XwAAAV8BjSuMngAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAA0PSURBVHhe7ZsJ
+        XgAAAV4BX2xuegAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAA0PSURBVHhe7ZsJ
         WBbVGsc/dkjZEZHNDREF8V4URAEFV0Q03M0EFddKC72RqIhaVwwXNPW6paK5V2qLS+aeayKpaS6IZakt
         3q77GuW/9z3fzDB8DJsi6HN9n+cHM2d55z3/mTnnzJn5dACeCsgiiBiiqlZ+SSAzIeKICcUwnggRdQyd
         lDdkZsQygndgZGT0F/3PJI4Rp4gcYg3RTKu+GrK3CeGnBBwRdQydlDdkfEbgWb02evQeDGtrWyVIC0sr

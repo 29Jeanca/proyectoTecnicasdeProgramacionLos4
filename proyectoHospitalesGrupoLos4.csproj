@@ -106,6 +106,12 @@
     <Compile Include="ventanas\ventanaAgregarVisitasPost.Designer.cs">
       <DependentUpon>ventanaAgregarVisitasPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="ventanas\VentanaConsultarInternacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\VentanaConsultarInternacion.Designer.cs">
+      <DependentUpon>VentanaConsultarInternacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\ventanaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,11 +126,11 @@
     <Compile Include="ventanas\ventanaMenu.Designer.cs">
       <DependentUpon>ventanaMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanaPrueba.cs">
+    <Compile Include="ventanas\ventanaConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanaPrueba.Designer.cs">
-      <DependentUpon>ventanaPrueba.cs</DependentUpon>
+    <Compile Include="ventanas\ventanaConsulta.Designer.cs">
+      <DependentUpon>ventanaConsulta.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,14 +165,17 @@
     <EmbeddedResource Include="ventanas\ventanaAgregarVisitasPost.resx">
       <DependentUpon>ventanaAgregarVisitasPost.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\VentanaConsultarInternacion.resx">
+      <DependentUpon>VentanaConsultarInternacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaInicio.resx">
       <DependentUpon>ventanaInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaMenu.resx">
       <DependentUpon>ventanaMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanaPrueba.resx">
-      <DependentUpon>ventanaPrueba.cs</DependentUpon>
+    <EmbeddedResource Include="ventanas\ventanaConsulta.resx">
+      <DependentUpon>ventanaConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
