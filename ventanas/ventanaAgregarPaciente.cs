@@ -46,7 +46,6 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         private void button1_Click(object sender, EventArgs e)
         {
             Paciente paciente = new Paciente();
-
             paciente.nombre = txtNombre.Text;
             paciente.apellido = txtApellido.Text;
             paciente.telefono = txtTelefono.Text;
@@ -59,9 +58,12 @@ namespace proyectoHospitalesGrupoLos4.ventanas
                 Patologia patologia = new Patologia();
                 patologia.nombre = txtOtraPatologia.Text;
                 Patologia.agregarPatologia(patologia);
-
             }
-            else { paciente.patologia = selectPatologia.Text; }
+            else { paciente.patologia = selectPatologia.Text;
+                Patologia patologia = new Patologia();
+                patologia.nombre = selectPatologia.Text;
+                Patologia.agregarPatologia(patologia);
+            }
 
             int contador=Paciente.agregarPaciente(paciente);
 

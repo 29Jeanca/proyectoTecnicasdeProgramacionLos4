@@ -11,6 +11,7 @@ namespace proyectoHospitalesGrupoLos4.clases
     public class Cirugia
     {
         public String nombre { get; set; }
+        public int idPaciente { get; set; }
 
         public Cirugia() { }
 
@@ -23,7 +24,7 @@ namespace proyectoHospitalesGrupoLos4.clases
             int retorna;
             SqlConnection conexion = conexionBD.abrirConexion();
             {
-                string cadenaBD = "INSERT into Cirugia (nombre) values('" + cirugia.nombre + "')";
+                string cadenaBD = "INSERT into Cirugia (nombre,idPaciente) values('" + cirugia.nombre + "',"+cirugia.idPaciente+")";
                 SqlCommand comando = new SqlCommand(cadenaBD, conexion);
                 retorna = comando.ExecuteNonQuery();
             }

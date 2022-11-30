@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace proyectoHospitalesGrupoLos4.ventanas
 {
-    public partial class ventanaAgregarMedicos : Form
+    public partial class ventanaConsultas : Form
     {
-        public ventanaAgregarMedicos()
+        public ventanaConsultas()
         {
             InitializeComponent();
         }

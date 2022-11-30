@@ -40,10 +40,15 @@ namespace proyectoHospitalesGrupoLos4.ventanas
                 cirugia.nombre = txt_TipoCirugia.Text;
                 Cirugia.agregarCirugia(cirugia);
             }
-            else
-            { 
-                operacion.descripcion = combo_TipoCirugia.Text;
-            }
+               else
+                {
+                    operacion.descripcion = combo_TipoCirugia.Text;
+                    Cirugia cirugia = new Cirugia();
+                    cirugia.nombre = combo_TipoCirugia.Text;
+                    cirugia.idPaciente = Convert.ToInt32(combo_IdPaciente.Text.Split(' ')[0]);
+                    Cirugia.agregarCirugia(cirugia);
+                }
+            
             Contrato contrato = new Contrato();
             contrato.idHospital = Convert.ToInt32(combo_IdHospital.Text);
             contrato.idPaciente = Convert.ToInt32(combo_IdPaciente.Text.Split(' ')[0]);
