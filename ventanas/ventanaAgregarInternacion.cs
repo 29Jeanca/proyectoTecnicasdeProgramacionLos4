@@ -33,12 +33,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             {
                 selectPaciente.Items.Add(pacienteRender["id"] + " " +pacienteRender["nombre"] + " " + pacienteRender["apellido"]);
             }
-            SqlDataReader doctorRender = conexionBD.traerInformacionDBDobleFiltro("nombre, id, apellido", "Doctor", "especialidad", "Medico general", "idHospital", selectHospital.Text);
-            while (doctorRender.Read())
-            {
-                selectDoctor.Items.Add(doctorRender["id"] + " " + doctorRender["nombre"] + " " + doctorRender["apellido"]);
-            }
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -105,6 +100,17 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         private void txtDescripcion_KeyPress(object sender, KeyPressEventArgs e)
         {
          
+        }
+
+        private void selectHospital_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            selectDoctor.Items.Clear();
+            SqlDataReader doctorRender = conexionBD.traerInformacionDBDobleFiltro("nombre, id, apellido", "Doctor", "especialidad", "Medico general", "idHospital", selectHospital.Text);
+            while (doctorRender.Read())
+            {
+                selectDoctor.Items.Add(doctorRender["id"] + " " + doctorRender["nombre"] + " " + doctorRender["apellido"]);
+            }
+
         }
     }
 }

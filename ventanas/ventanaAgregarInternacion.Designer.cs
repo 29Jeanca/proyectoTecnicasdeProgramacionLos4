@@ -61,6 +61,7 @@
             this.selectHospital.Name = "selectHospital";
             this.selectHospital.Size = new System.Drawing.Size(121, 21);
             this.selectHospital.TabIndex = 1;
+            this.selectHospital.SelectedIndexChanged += new System.EventHandler(this.selectHospital_SelectedIndexChanged);
             // 
             // selectPaciente
             // 
