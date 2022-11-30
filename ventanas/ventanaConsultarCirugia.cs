@@ -35,18 +35,23 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void combo_TipoCirugia_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void combo_TipoCirugia_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
             SqlDataReader consultaCirugiaNombrePaciente = conexionBD.traerInformacionDB("idPaciente", "Cirugia", "nombre", combo_TipoCirugia.Text);
             SqlDataReader consultaCirugiaNombreDoctor = conexionBD.traerInformacionDB("idDoctor", "Cirugia", "nombre", combo_TipoCirugia.Text);
             SqlDataReader consultaCirugiaIdHospital = conexionBD.traerInformacionDB("idHospital", "Cirugia", null, combo_TipoCirugia.Text);
             while (consultaCirugiaNombrePaciente.Read())
             {
                 SqlDataReader pacientesConsulta = conexionBD.traerInformacionDB("*", "Paciente", "id", consultaCirugiaNombrePaciente["idPaciente"].ToString());
-                 SqlDataReader doctorConsulta = conexionBD.traerInformacionDB("*", "Doctor", "id", consultaCirugiaNombreDoctor["idDoctor"].ToString());
-               SqlDataReader hospitalConsulta = conexionBD.traerInformacionDB("*", "Hospital", "id", consultaCirugiaIdHospital["idHospital"].ToString());
+                SqlDataReader doctorConsulta = conexionBD.traerInformacionDB("*", "Doctor", "id", consultaCirugiaNombreDoctor["idDoctor"].ToString());
+                SqlDataReader hospitalConsulta = conexionBD.traerInformacionDB("*", "Hospital", "id", consultaCirugiaIdHospital["idHospital"].ToString());
                 while (pacientesConsulta.Read())
                 {
                     txt_Paciente.Text = pacientesConsulta["nombre"] + " " + pacientesConsulta["apellido"];
-                    txt_Doctor.Text = (doctorConsulta["nombre"] +" " + doctorConsulta["apellido"]);
+                    txt_Doctor.Text = (doctorConsulta["nombre"] + " " + doctorConsulta["apellido"]);
                     txt_IdHospital.Text = (hospitalConsulta["id"].ToString());
                 }
             }

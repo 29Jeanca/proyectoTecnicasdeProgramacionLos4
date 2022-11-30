@@ -81,7 +81,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void btnAgregarSecretaria_Click(object sender, EventArgs e)
         {
-            VentanaAgregarSecretaria ventanaSecretaria = new VentanaAgregarSecretaria();
+            ventanaAgregarSecretaria ventanaSecretaria = new ventanaAgregarSecretaria();
             ventanaSecretaria.Show();
             this.Visible = false;
         }

@@ -28,24 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.combo_TipoCirugia = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_Paciente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Doctor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_IdHospital = new System.Windows.Forms.TextBox();
+            this.combo_TipoCirugia = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // combo_TipoCirugia
-            // 
-            this.combo_TipoCirugia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_TipoCirugia.FormattingEnabled = true;
-            this.combo_TipoCirugia.Location = new System.Drawing.Point(24, 28);
-            this.combo_TipoCirugia.Name = "combo_TipoCirugia";
-            this.combo_TipoCirugia.Size = new System.Drawing.Size(204, 21);
-            this.combo_TipoCirugia.TabIndex = 0;
-            this.combo_TipoCirugia.SelectedIndexChanged += new System.EventHandler(this.combo_TipoCirugia_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -99,18 +89,27 @@
             this.txt_IdHospital.Size = new System.Drawing.Size(162, 20);
             this.txt_IdHospital.TabIndex = 6;
             // 
+            // combo_TipoCirugia
+            // 
+            this.combo_TipoCirugia.FormattingEnabled = true;
+            this.combo_TipoCirugia.Location = new System.Drawing.Point(24, 27);
+            this.combo_TipoCirugia.Name = "combo_TipoCirugia";
+            this.combo_TipoCirugia.Size = new System.Drawing.Size(121, 21);
+            this.combo_TipoCirugia.TabIndex = 7;
+            this.combo_TipoCirugia.SelectedIndexChanged += new System.EventHandler(this.combo_TipoCirugia_SelectedIndexChanged_1);
+            // 
             // ventanaConsultarCirugia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(357, 450);
+            this.Controls.Add(this.combo_TipoCirugia);
             this.Controls.Add(this.txt_IdHospital);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_Doctor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_Paciente);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.combo_TipoCirugia);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -123,13 +122,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox combo_TipoCirugia;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_Paciente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_Doctor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_IdHospital;
+        private System.Windows.Forms.ComboBox combo_TipoCirugia;
     }
 }
