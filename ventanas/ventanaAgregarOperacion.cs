@@ -91,7 +91,6 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         {
             SqlDataReader IdHospitalLector = conexionBD.traerInformacionDB("id", "Hospital", null, null);
             SqlDataReader IdPacienteLector = conexionBD.traerInformacionDB("id,nombre,apellido", "Paciente", "activo", "false");
-            SqlDataReader doctorRender = conexionBD.traerInformacionDBDobleFiltro("nombre, id, apellido", "Doctor", "especialidad", "Cirujano", "idHospital", combo_IdHospital.Text);
             SqlDataReader idCirugiaLector = conexionBD.traerInformacionDB("nombre", "Cirugia", null, null);
             while (IdHospitalLector.Read())
             {
@@ -101,10 +100,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             {
                 combo_IdPaciente.Items.Add(IdPacienteLector["id"].ToString() + " " + IdPacienteLector["nombre"] + " " + IdPacienteLector["apellido"]);
             }
-            while (doctorRender.Read())
-            {
-                combo_IdDoctor.Items.Add(doctorRender["id"].ToString() + " " +doctorRender["nombre"] + " " + doctorRender["apellido"]);
-            }
+           
             while (idCirugiaLector.Read())
             {
                 combo_TipoCirugia.Items.Add(idCirugiaLector["nombre"].ToString());
@@ -129,6 +125,16 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         {
             combo_TipoCirugia.SelectedIndex = -1;
             txt_TipoCirugia.Enabled = true;
+        }
+
+        private void combo_IdHospital_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            combo_IdDoctor.Items.Clear();
+            SqlDataReader doctorRender = conexionBD.traerInformacionDBDobleFiltro("nombre, id, apellido", "Doctor", "especialidad", "Cirujano", "idHospital", combo_IdHospital.Text);
+            while (doctorRender.Read())
+            {
+                combo_IdDoctor.Items.Add(doctorRender["id"].ToString() + " " + doctorRender["nombre"] + " " + doctorRender["apellido"]);
+            }
         }
     }
 }

@@ -54,7 +54,7 @@
             // 
             this.combo_IdPaciente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_IdPaciente.FormattingEnabled = true;
-            this.combo_IdPaciente.Location = new System.Drawing.Point(31, 44);
+            this.combo_IdPaciente.Location = new System.Drawing.Point(24, 101);
             this.combo_IdPaciente.Name = "combo_IdPaciente";
             this.combo_IdPaciente.Size = new System.Drawing.Size(121, 21);
             this.combo_IdPaciente.TabIndex = 14;
@@ -81,7 +81,7 @@
             // 
             this.combo_IdDoctor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_IdDoctor.FormattingEnabled = true;
-            this.combo_IdDoctor.Location = new System.Drawing.Point(31, 102);
+            this.combo_IdDoctor.Location = new System.Drawing.Point(24, 167);
             this.combo_IdDoctor.Name = "combo_IdDoctor";
             this.combo_IdDoctor.Size = new System.Drawing.Size(121, 21);
             this.combo_IdDoctor.TabIndex = 11;
@@ -90,7 +90,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
-            this.label3.Location = new System.Drawing.Point(28, 20);
+            this.label3.Location = new System.Drawing.Point(21, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 21);
             this.label3.TabIndex = 10;
@@ -100,10 +100,11 @@
             // 
             this.combo_IdHospital.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_IdHospital.FormattingEnabled = true;
-            this.combo_IdHospital.Location = new System.Drawing.Point(31, 167);
+            this.combo_IdHospital.Location = new System.Drawing.Point(24, 44);
             this.combo_IdHospital.Name = "combo_IdHospital";
             this.combo_IdHospital.Size = new System.Drawing.Size(121, 21);
             this.combo_IdHospital.TabIndex = 9;
+            this.combo_IdHospital.SelectedIndexChanged += new System.EventHandler(this.combo_IdHospital_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -139,7 +140,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
-            this.label5.Location = new System.Drawing.Point(28, 137);
+            this.label5.Location = new System.Drawing.Point(28, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 23);
             this.label5.TabIndex = 4;
@@ -170,7 +171,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 9.75F);
-            this.label7.Location = new System.Drawing.Point(28, 76);
+            this.label7.Location = new System.Drawing.Point(28, 141);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 23);
             this.label7.TabIndex = 0;

@@ -14,7 +14,7 @@ namespace proyectoHospitalesGrupoLos4.clases
         {
             string rutaJean = "Data Source=JEANCA;Initial Catalog=proyectoHospitales;Integrated Security=True";
             string rutaMiguel = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ProjectTecnicas;Data Source=MIGUELA02";
-            SqlConnection conexion = new SqlConnection(rutaMiguel);
+            SqlConnection conexion = new SqlConnection(rutaJean);
             conexion.Open();
             return conexion;
         }
@@ -31,7 +31,7 @@ namespace proyectoHospitalesGrupoLos4.clases
             else
             {
                 SqlConnection conexion = abrirConexion();
-                string query = "select " + columnas + " from " + tabla + "  where " + filtrar + " = '" + dato + "';";
+                string query = "select " + columnas + " from " + tabla + "  where " + filtrar + " = '" + dato + "'";
                 SqlCommand comando = new SqlCommand(query, conexion);
                 SqlDataReader renderPacientes = comando.ExecuteReader();
                 return renderPacientes;

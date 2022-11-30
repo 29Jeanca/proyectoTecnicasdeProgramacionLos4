@@ -106,6 +106,12 @@
     <Compile Include="ventanas\ventanaAgregarVisitasPost.Designer.cs">
       <DependentUpon>ventanaAgregarVisitasPost.cs</DependentUpon>
     </Compile>
+    <Compile Include="ventanas\ventanaConsultarCirugia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanaConsultarCirugia.Designer.cs">
+      <DependentUpon>ventanaConsultarCirugia.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\VentanaConsultarInternacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaAgregarVisitasPost.resx">
       <DependentUpon>ventanaAgregarVisitasPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanaConsultarCirugia.resx">
+      <DependentUpon>ventanaConsultarCirugia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\VentanaConsultarInternacion.resx">
       <DependentUpon>VentanaConsultarInternacion.cs</DependentUpon>

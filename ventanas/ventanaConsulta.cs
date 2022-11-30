@@ -23,5 +23,12 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             consultaInternacion.Show();
             this.Visible = false;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ventanaConsultarCirugia consultarCirugia = new ventanaConsultarCirugia();
+            consultarCirugia.Show();
+            this.Visible = false;
+        }
     }
 }
