@@ -17,7 +17,7 @@ namespace proyectoHospitalesGrupoLos4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ventanaMenu());
+            Application.Run(new ventanaInicioSesion());
         }
     }
 }

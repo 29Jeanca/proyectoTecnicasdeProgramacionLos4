@@ -32,12 +32,12 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             operacion.idHospital = Convert.ToInt32(combo_IdHospital.Text.Split(' ')[0]);
             operacion.idPaciente = Convert.ToInt32(combo_IdPaciente.Text.Split(' ')[0]);
             operacion.idDoctor = Convert.ToInt32(combo_IdDoctor.Text.Split(' ')[0]);
-            operacion.fechaContrato = input_FechaContrato.Text;
             if (combo_TipoCirugia.Text == "")
             {
                 operacion.descripcion = txt_TipoCirugia.Text;
                 Cirugia cirugia = new Cirugia();
                 cirugia.nombre = txt_TipoCirugia.Text;
+                cirugia.idPaciente = Convert.ToInt32(combo_IdPaciente.Text.Split(' ')[0]);
                 Cirugia.agregarCirugia(cirugia);
             }
                else
@@ -47,13 +47,14 @@ namespace proyectoHospitalesGrupoLos4.ventanas
                     cirugia.nombre = combo_TipoCirugia.Text;
                     cirugia.idPaciente = Convert.ToInt32(combo_IdPaciente.Text.Split(' ')[0]);
                     Cirugia.agregarCirugia(cirugia);
-                }
+            }
             
             Contrato contrato = new Contrato();
+            DateTime hoy = DateTime.Today;
             contrato.idHospital = Convert.ToInt32(combo_IdHospital.Text);
             contrato.idPaciente = Convert.ToInt32(combo_IdPaciente.Text.Split(' ')[0]);
             contrato.valorContrato = Convert.ToDouble(txt_ValorContrato.Text);
-            contrato.fechaContrato = input_FechaContrato.Text;
+            contrato.fechaContrato = hoy.ToString("D");
             contrato.valorRestante = Convert.ToDouble(txt_ValorContrato.Text);
             contrato.codigoContrato = "CIR" + conexionBD.generadorDeNumerosRandoms();
             contrato.nombre = combo_IdPaciente.Text.Split(' ')[1];
@@ -84,8 +85,6 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         }
 
 
-        // Agregar cambiar a activo al crear la operacion, hacer validadcion para que solo aparezcan los que tengan activo falso
-        // revisar porque no aparecen todos los cirujanos
         
         private void ventanaAgregarOperacion_Load(object sender, EventArgs e)
         {
@@ -135,6 +134,18 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             {
                 combo_IdDoctor.Items.Add(doctorRender["id"].ToString() + " " + doctorRender["nombre"] + " " + doctorRender["apellido"]);
             }
+        }
+
+        private void input_FechaContrato_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ventanaMenu menu = new ventanaMenu();
+            menu.Show();
+            this.Visible = false;
         }
     }
 }

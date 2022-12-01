@@ -51,6 +51,7 @@
     <Compile Include="clases\Contrato.cs" />
     <Compile Include="clases\Doctor.cs" />
     <Compile Include="clases\Hospital.cs" />
+    <Compile Include="clases\CrearUsuario.cs" />
     <Compile Include="clases\Internacion.cs" />
     <Compile Include="clases\Operacion.cs" />
     <Compile Include="clases\Paciente.cs" />
@@ -94,12 +95,6 @@
     <Compile Include="ventanas\ventanaAgregarPago.Designer.cs">
       <DependentUpon>ventanaAgregarPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanaAgregarSecretaria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ventanas\ventanaAgregarSecretaria.Designer.cs">
-      <DependentUpon>ventanaAgregarSecretaria.cs</DependentUpon>
-    </Compile>
     <Compile Include="ventanas\ventanaAgregarVisitasPost.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,14 +113,20 @@
     <Compile Include="ventanas\VentanaConsultarInternacion.Designer.cs">
       <DependentUpon>VentanaConsultarInternacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="ventanas\ventanaInicio.cs">
+    <Compile Include="ventanas\ventanaCrearUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ventanas\ventanaInicio.Designer.cs">
-      <DependentUpon>ventanaInicio.cs</DependentUpon>
+    <Compile Include="ventanas\ventanaCrearUsuario.Designer.cs">
+      <DependentUpon>ventanaCrearUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ventanas\ventanaInicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanaInicioSesion.Designer.cs">
+      <DependentUpon>ventanaInicioSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\ventanaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,8 +175,11 @@
     <EmbeddedResource Include="ventanas\VentanaConsultarInternacion.resx">
       <DependentUpon>VentanaConsultarInternacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ventanas\ventanaInicio.resx">
-      <DependentUpon>ventanaInicio.cs</DependentUpon>
+    <EmbeddedResource Include="ventanas\ventanaCrearUsuario.resx">
+      <DependentUpon>ventanaCrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanaInicioSesion.resx">
+      <DependentUpon>ventanaInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaMenu.resx">
       <DependentUpon>ventanaMenu.cs</DependentUpon>

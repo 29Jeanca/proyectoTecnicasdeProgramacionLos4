@@ -79,11 +79,12 @@
             // 
             // btnAgregarDoctor
             // 
-            this.btnAgregarDoctor.BackColor = System.Drawing.Color.White;
+            this.btnAgregarDoctor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnAgregarDoctor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarDoctor.BackgroundImage")));
             this.btnAgregarDoctor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAgregarDoctor.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnAgregarDoctor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarDoctor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnAgregarDoctor.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnAgregarDoctor.Location = new System.Drawing.Point(30, 172);
             this.btnAgregarDoctor.Name = "btnAgregarDoctor";
@@ -106,6 +107,8 @@
             // 
             this.btnAgregarVisita.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarVisita.BackgroundImage")));
             this.btnAgregarVisita.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregarVisita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarVisita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnAgregarVisita.Location = new System.Drawing.Point(290, 342);
             this.btnAgregarVisita.Name = "btnAgregarVisita";
             this.btnAgregarVisita.Size = new System.Drawing.Size(124, 96);
@@ -115,9 +118,11 @@
             // 
             // btnAgregarPaciente
             // 
-            this.btnAgregarPaciente.BackColor = System.Drawing.Color.White;
+            this.btnAgregarPaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnAgregarPaciente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarPaciente.BackgroundImage")));
             this.btnAgregarPaciente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregarPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarPaciente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnAgregarPaciente.Location = new System.Drawing.Point(30, 342);
             this.btnAgregarPaciente.Name = "btnAgregarPaciente";
             this.btnAgregarPaciente.Size = new System.Drawing.Size(133, 96);
@@ -127,9 +132,11 @@
             // 
             // btnAgregarInternacion
             // 
-            this.btnAgregarInternacion.BackColor = System.Drawing.Color.White;
+            this.btnAgregarInternacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnAgregarInternacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarInternacion.BackgroundImage")));
             this.btnAgregarInternacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregarInternacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarInternacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnAgregarInternacion.Location = new System.Drawing.Point(35, 496);
             this.btnAgregarInternacion.Name = "btnAgregarInternacion";
             this.btnAgregarInternacion.Size = new System.Drawing.Size(128, 96);
@@ -141,6 +148,8 @@
             // 
             this.btnAgregarHospital.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarHospital.BackgroundImage")));
             this.btnAgregarHospital.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregarHospital.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarHospital.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnAgregarHospital.Location = new System.Drawing.Point(30, 11);
             this.btnAgregarHospital.Name = "btnAgregarHospital";
             this.btnAgregarHospital.Size = new System.Drawing.Size(133, 90);
@@ -152,6 +161,8 @@
             // 
             this.btnRegistrarPago.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistrarPago.BackgroundImage")));
             this.btnRegistrarPago.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnRegistrarPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnRegistrarPago.Location = new System.Drawing.Point(285, 496);
             this.btnRegistrarPago.Name = "btnRegistrarPago";
             this.btnRegistrarPago.Size = new System.Drawing.Size(129, 96);
@@ -218,6 +229,8 @@
             // 
             this.btnAgregarSecretaria.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarSecretaria.BackgroundImage")));
             this.btnAgregarSecretaria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregarSecretaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarSecretaria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.btnAgregarSecretaria.Location = new System.Drawing.Point(285, 174);
             this.btnAgregarSecretaria.Name = "btnAgregarSecretaria";
             this.btnAgregarSecretaria.Size = new System.Drawing.Size(129, 96);
@@ -237,6 +250,8 @@
             // 
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
             this.button7.Location = new System.Drawing.Point(285, 12);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(122, 89);
@@ -321,7 +336,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(130, 18);
             this.label17.TabIndex = 25;
-            this.label17.Text = "Agregar Secretaría";
+            this.label17.Text = "Agregar Empleado";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label18
@@ -350,11 +365,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(175, 659);
+            this.button1.Location = new System.Drawing.Point(134, 659);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(169, 23);
             this.button1.TabIndex = 28;
-            this.button1.Text = "button1";
+            this.button1.Text = "Consultas";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -362,7 +377,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(442, 732);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(176)))), ((int)(((byte)(118)))));
+            this.ClientSize = new System.Drawing.Size(442, 694);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);

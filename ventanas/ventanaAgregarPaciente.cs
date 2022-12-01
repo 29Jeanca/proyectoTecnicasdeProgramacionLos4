@@ -151,5 +151,12 @@ private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
                 return;
             }
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            ventanaMenu menu=new ventanaMenu();
+            menu.Show();
+            this.Visible = false;
+        }
     }
 }

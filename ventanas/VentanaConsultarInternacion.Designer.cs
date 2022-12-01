@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaConsultarInternacion));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labbelName = new System.Windows.Forms.Label();
@@ -41,13 +42,14 @@
             this.textHospital = new System.Windows.Forms.Label();
             this.labelHospital = new System.Windows.Forms.Label();
             this.Card = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.Card.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 34);
+            this.comboBox1.Location = new System.Drawing.Point(12, 77);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(189, 21);
             this.comboBox1.TabIndex = 0;
@@ -56,7 +58,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 18);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(9, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 1;
@@ -178,22 +181,42 @@
             this.Card.Controls.Add(this.textEstadoCivil);
             this.Card.Controls.Add(this.textTelefono);
             this.Card.Controls.Add(this.labelEstado);
-            this.Card.Location = new System.Drawing.Point(96, 154);
+            this.Card.Location = new System.Drawing.Point(310, 61);
             this.Card.Name = "Card";
-            this.Card.Size = new System.Drawing.Size(359, 190);
+            this.Card.Size = new System.Drawing.Size(246, 181);
             this.Card.TabIndex = 14;
             this.Card.Visible = false;
             this.Card.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(76)))), ((int)(((byte)(117)))));
+            this.button2.Location = new System.Drawing.Point(-1, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(45, 43);
+            this.button2.TabIndex = 30;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // VentanaConsultarInternacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 492);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(76)))), ((int)(((byte)(117)))));
+            this.ClientSize = new System.Drawing.Size(568, 293);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.Card);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "VentanaConsultarInternacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VentanaConsultarInternacion";
             this.Load += new System.EventHandler(this.VentanaConsultarInternacion_Load);
             this.Card.ResumeLayout(false);
@@ -218,5 +241,6 @@
         private System.Windows.Forms.Label textHospital;
         private System.Windows.Forms.Label labelHospital;
         private System.Windows.Forms.Panel Card;
+        private System.Windows.Forms.Button button2;
     }
 }

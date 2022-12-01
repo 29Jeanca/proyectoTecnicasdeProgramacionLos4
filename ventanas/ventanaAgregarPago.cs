@@ -152,5 +152,32 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             
 
         }
+
+        private void txtOtraCirugia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            ventanaMenu menu = new ventanaMenu();
+            menu.Show();
+            this.Visible = false;
+        }
     }
 }
