@@ -66,6 +66,7 @@
             this.selectHospital.Size = new System.Drawing.Size(121, 21);
             this.selectHospital.TabIndex = 1;
             this.selectHospital.SelectedIndexChanged += new System.EventHandler(this.selectHospital_SelectedIndexChanged);
+
             // 
             // selectPaciente
             // 
@@ -95,7 +96,7 @@
             this.selectDoctor.Name = "selectDoctor";
             this.selectDoctor.Size = new System.Drawing.Size(121, 21);
             this.selectDoctor.TabIndex = 5;
-            this.selectDoctor.SelectedIndexChanged += new System.EventHandler(this.selectDoctor_SelectedIndexChanged);
+         
             // 
             // Doctor
             // 
@@ -115,9 +116,8 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(191, 138);
             this.txtDescripcion.TabIndex = 6;
-            this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
-            this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescripcion_KeyPress);
-            // 
+            
+            
             // label2
             // 
             this.label2.AutoSize = true;

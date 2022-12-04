@@ -79,27 +79,12 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             }
         }
 
-        private void selectDoctor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-            
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
             ventanaMenu menu = new ventanaMenu();
             menu.Show();
             this.Visible = false;
-        }
-
-        private void txtDescripcion_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDescripcion_KeyPress(object sender, KeyPressEventArgs e)
-        {
-         
         }
 
         private void selectHospital_SelectedIndexChanged(object sender, EventArgs e)
@@ -119,5 +104,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             menu.Show();
             this.Visible = false; 
         }
+
+     
     }
 }

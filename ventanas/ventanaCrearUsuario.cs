@@ -49,6 +49,30 @@ namespace proyectoHospitalesGrupoLos4
             menu.Show();
             this.Visible = false;
         }
+
+        private void txt_Contrasenia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_MouseHover_1(object sender, EventArgs e)
+        {
+            txt_Contrasenia.UseSystemPasswordChar = false;
+
+        }
+
+        private void button1_MouseLeave_1(object sender, EventArgs e)
+        {
+            txt_Contrasenia.UseSystemPasswordChar = true;
+
+        }
     }
     
 }

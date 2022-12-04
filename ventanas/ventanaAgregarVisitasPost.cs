@@ -21,11 +21,11 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void ventanaAgregarVisitasPost_Load(object sender, EventArgs e)
         {
-            SqlDataReader idHospitalLector = conexionBD.traerInformacionDB("idHospital", "Operacion", null, null);
+            SqlDataReader idHospitalLector = conexionBD.traerInformacionDB("id", "Hospital", null, null);
             SqlDataReader idPacienteLector = conexionBD.traerInformacionDB("idPaciente", "Operacion", null, null);
             SqlDataReader idDoctorLector = conexionBD.traerInformacionDB("idDoctor", "Operacion", null, null);
             while (idHospitalLector.Read()) {
-                combo_IdHospital.Items.Add(idHospitalLector["idHospital"].ToString());
+                combo_IdHospital.Items.Add(idHospitalLector["id"].ToString());
             }
             while (idPacienteLector.Read())
             {
@@ -73,10 +73,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             this.Visible = false;
         }
 
-        private void txt_Medicamentos_KeyUp(object sender, KeyEventArgs e)
-        {
-
-        }
+ 
 
         private void txtGasto_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -95,5 +92,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             menu.Show();
             this.Visible = false;
         }
+
+     
     }
 }

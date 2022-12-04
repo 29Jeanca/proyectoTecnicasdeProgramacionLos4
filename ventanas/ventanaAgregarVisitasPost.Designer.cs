@@ -71,6 +71,7 @@
             this.combo_IdHospital.Name = "combo_IdHospital";
             this.combo_IdHospital.Size = new System.Drawing.Size(194, 23);
             this.combo_IdHospital.TabIndex = 1;
+           
             // 
             // label2
             // 
@@ -176,8 +177,7 @@
             this.txt_Medicamentos.Name = "txt_Medicamentos";
             this.txt_Medicamentos.Size = new System.Drawing.Size(197, 21);
             this.txt_Medicamentos.TabIndex = 11;
-            this.txt_Medicamentos.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_Medicamentos_KeyUp);
-            // 
+            
             // label7
             // 
             this.label7.AutoSize = true;

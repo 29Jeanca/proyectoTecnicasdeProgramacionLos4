@@ -70,7 +70,7 @@
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hospital";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+        
             // 
             // label2
             // 
@@ -97,8 +97,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(136, 20);
             this.txtNombre.TabIndex = 4;
-            this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            
             // 
             // label3
             // 
@@ -109,10 +108,9 @@
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nombre";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
+            
             // label4
-            // 
+      
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(195, 134);
@@ -127,7 +125,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(136, 20);
             this.txtApellido.TabIndex = 7;
-            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
+            
             // 
             // label5
             // 
@@ -191,7 +189,7 @@
             this.label9.Size = new System.Drawing.Size(77, 13);
             this.label9.TabIndex = 17;
             this.label9.Text = "Tipo de cirugia";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+  
             // 
             // label10
             // 
@@ -202,7 +200,7 @@
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 18;
             this.label10.Text = "Otra cirugia";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+        
             // 
             // txtOtraCirugia
             // 
@@ -210,8 +208,7 @@
             this.txtOtraCirugia.Name = "txtOtraCirugia";
             this.txtOtraCirugia.Size = new System.Drawing.Size(139, 20);
             this.txtOtraCirugia.TabIndex = 19;
-            this.txtOtraCirugia.TextChanged += new System.EventHandler(this.txtOtraCirugia_TextChanged);
-            this.txtOtraCirugia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOtraCirugia_KeyPress);
+            
             // 
             // button3
             // 

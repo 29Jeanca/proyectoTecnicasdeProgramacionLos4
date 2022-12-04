@@ -66,25 +66,6 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             this.Visible = false;
         }
 
-        private void txt_TelefonoDoctor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_NombreDoctor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_NombreDoctor_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
-        private void txt_ApellidoDoctor_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
 
 
         private void txt_TelefonoDoctor_KeyPress(object sender, KeyPressEventArgs e)
@@ -97,5 +78,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             }
            
         }
+
+       
     }
 }

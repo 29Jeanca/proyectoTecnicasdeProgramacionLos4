@@ -92,11 +92,8 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             this.Visible = false;
         }
 
-        private void txtTelefono_TextChanged(object sender, EventArgs e)
-        {
-          
-           
-        }
+  
+        
 
         private void selectPatologia_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -112,25 +109,7 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             txtOtraPatologia.Enabled = true;
         }
 
-        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
-            {
-                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
 
-private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
-            {
-                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
 
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -142,15 +121,6 @@ private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
             }
         }
 
-        private void txtOtraPatologia_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
-            {
-                MessageBox.Show("Este campo solo admite letras", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -158,5 +128,7 @@ private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
             menu.Show();
             this.Visible = false;
         }
+
+        
     }
 }

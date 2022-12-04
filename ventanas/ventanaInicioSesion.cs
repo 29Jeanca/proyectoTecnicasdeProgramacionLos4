@@ -77,6 +77,16 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             menu.Show();
             this.Visible = false;
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            txt_Contrasenia.UseSystemPasswordChar = false;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            txt_Contrasenia.UseSystemPasswordChar = true;
+        }
     }
     }
 

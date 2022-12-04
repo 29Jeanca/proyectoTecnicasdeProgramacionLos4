@@ -48,6 +48,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(12, 77);
             this.comboBox1.Name = "comboBox1";
@@ -79,6 +80,7 @@
             // textNombre
             // 
             this.textNombre.AutoSize = true;
+            this.textNombre.Enabled = false;
             this.textNombre.Location = new System.Drawing.Point(151, 29);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(35, 13);
@@ -89,6 +91,7 @@
             // textCorreo
             // 
             this.textCorreo.AutoSize = true;
+            this.textCorreo.Enabled = false;
             this.textCorreo.Location = new System.Drawing.Point(151, 51);
             this.textCorreo.Name = "textCorreo";
             this.textCorreo.Size = new System.Drawing.Size(35, 13);
@@ -109,6 +112,7 @@
             // textTelefono
             // 
             this.textTelefono.AutoSize = true;
+            this.textTelefono.Enabled = false;
             this.textTelefono.Location = new System.Drawing.Point(151, 74);
             this.textTelefono.Name = "textTelefono";
             this.textTelefono.Size = new System.Drawing.Size(35, 13);
@@ -129,6 +133,7 @@
             // textEstadoCivil
             // 
             this.textEstadoCivil.AutoSize = true;
+            this.textEstadoCivil.Enabled = false;
             this.textEstadoCivil.Location = new System.Drawing.Point(151, 96);
             this.textEstadoCivil.Name = "textEstadoCivil";
             this.textEstadoCivil.Size = new System.Drawing.Size(35, 13);
@@ -149,6 +154,7 @@
             // textHospital
             // 
             this.textHospital.AutoSize = true;
+            this.textHospital.Enabled = false;
             this.textHospital.Location = new System.Drawing.Point(151, 119);
             this.textHospital.Name = "textHospital";
             this.textHospital.Size = new System.Drawing.Size(35, 13);

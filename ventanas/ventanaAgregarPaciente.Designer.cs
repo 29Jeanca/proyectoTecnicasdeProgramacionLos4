@@ -71,6 +71,7 @@
             this.selectHospital.Name = "selectHospital";
             this.selectHospital.Size = new System.Drawing.Size(182, 21);
             this.selectHospital.TabIndex = 2;
+          
             // 
             // txtNombre
             // 
@@ -79,7 +80,7 @@
             this.txtNombre.Size = new System.Drawing.Size(182, 20);
             this.txtNombre.TabIndex = 3;
             this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
+            
             // 
             // label2
             // 
@@ -110,7 +111,7 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(182, 20);
             this.txtApellido.TabIndex = 5;
-            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
+            
             // 
             // label4
             // 
@@ -147,7 +148,7 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(182, 20);
             this.txtTelefono.TabIndex = 9;
-            this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
+           
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // selectEstadoCivil
@@ -219,7 +220,7 @@
             this.txtOtraPatologia.Name = "txtOtraPatologia";
             this.txtOtraPatologia.Size = new System.Drawing.Size(182, 20);
             this.txtOtraPatologia.TabIndex = 15;
-            this.txtOtraPatologia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOtraPatologia_KeyPress);
+          
             // 
             // button1
             // 
