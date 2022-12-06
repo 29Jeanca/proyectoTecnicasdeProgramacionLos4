@@ -70,7 +70,6 @@
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hospital";
-        
             // 
             // label2
             // 
@@ -97,7 +96,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(136, 20);
             this.txtNombre.TabIndex = 4;
-            
             // 
             // label3
             // 
@@ -108,9 +106,9 @@
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Nombre";
-            
+            // 
             // label4
-      
+            // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(195, 134);
@@ -125,7 +123,6 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(136, 20);
             this.txtApellido.TabIndex = 7;
-            
             // 
             // label5
             // 
@@ -189,7 +186,6 @@
             this.label9.Size = new System.Drawing.Size(77, 13);
             this.label9.TabIndex = 17;
             this.label9.Text = "Tipo de cirugia";
-  
             // 
             // label10
             // 
@@ -200,7 +196,6 @@
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 18;
             this.label10.Text = "Otra cirugia";
-        
             // 
             // txtOtraCirugia
             // 
@@ -208,7 +203,6 @@
             this.txtOtraCirugia.Name = "txtOtraCirugia";
             this.txtOtraCirugia.Size = new System.Drawing.Size(139, 20);
             this.txtOtraCirugia.TabIndex = 19;
-            
             // 
             // button3
             // 
@@ -239,9 +233,9 @@
             this.button2.Location = new System.Drawing.Point(19, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(45, 43);
-            this.button2.TabIndex = 28;
+            this.button2.TabIndex = 35;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.Click += new System.EventHandler(this.button2_Click_2);
             // 
             // ventanaAgregarPago
             // 

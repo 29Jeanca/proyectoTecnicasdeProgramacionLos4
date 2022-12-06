@@ -33,8 +33,8 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ventanaMenu menu = new ventanaMenu();
-            menu.Show();
+            ventanaInicioSesion inicio = new ventanaInicioSesion();
+            inicio.Show();
             this.Visible = false;
         }
 
@@ -42,6 +42,13 @@ namespace proyectoHospitalesGrupoLos4.ventanas
         {
             ventanaConsultarHospitales consultarHospitales = new ventanaConsultarHospitales();
             consultarHospitales.Show();
+            this.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ventanaConsultarPaciente consultarPaciente = new ventanaConsultarPaciente();
+            consultarPaciente.Show();
             this.Visible = false;
         }
     }

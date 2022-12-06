@@ -216,12 +216,12 @@
             this.button3.Cursor = System.Windows.Forms.Cursors.Default;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(194)))));
-            this.button3.Location = new System.Drawing.Point(15, 12);
+            this.button3.Location = new System.Drawing.Point(14, 9);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(45, 43);
-            this.button3.TabIndex = 28;
+            this.button3.TabIndex = 33;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // ventanaAgregarOperacion
             // 

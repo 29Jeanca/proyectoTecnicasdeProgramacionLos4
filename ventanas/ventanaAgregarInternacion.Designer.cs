@@ -66,7 +66,6 @@
             this.selectHospital.Size = new System.Drawing.Size(121, 21);
             this.selectHospital.TabIndex = 1;
             this.selectHospital.SelectedIndexChanged += new System.EventHandler(this.selectHospital_SelectedIndexChanged);
-
             // 
             // selectPaciente
             // 
@@ -96,7 +95,6 @@
             this.selectDoctor.Name = "selectDoctor";
             this.selectDoctor.Size = new System.Drawing.Size(121, 21);
             this.selectDoctor.TabIndex = 5;
-         
             // 
             // Doctor
             // 
@@ -116,8 +114,7 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(191, 138);
             this.txtDescripcion.TabIndex = 6;
-            
-            
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -185,12 +182,12 @@
             this.button3.Cursor = System.Windows.Forms.Cursors.Default;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(194)))));
-            this.button3.Location = new System.Drawing.Point(7, 6);
+            this.button3.Location = new System.Drawing.Point(7, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(45, 43);
-            this.button3.TabIndex = 28;
+            this.button3.TabIndex = 32;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // ventanaAgregarInternacion
             // 

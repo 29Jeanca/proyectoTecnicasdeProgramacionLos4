@@ -147,5 +147,11 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             menu.Show();
             this.Visible = false;
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            ventanaMenu menu = new ventanaMenu();
+            menu.Show();
+            this.Visible = false;       }
     }
 }

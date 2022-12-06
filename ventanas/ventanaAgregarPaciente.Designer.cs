@@ -71,7 +71,6 @@
             this.selectHospital.Name = "selectHospital";
             this.selectHospital.Size = new System.Drawing.Size(182, 21);
             this.selectHospital.TabIndex = 2;
-          
             // 
             // txtNombre
             // 
@@ -80,7 +79,6 @@
             this.txtNombre.Size = new System.Drawing.Size(182, 20);
             this.txtNombre.TabIndex = 3;
             this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            
             // 
             // label2
             // 
@@ -111,7 +109,6 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(182, 20);
             this.txtApellido.TabIndex = 5;
-            
             // 
             // label4
             // 
@@ -148,7 +145,6 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(182, 20);
             this.txtTelefono.TabIndex = 9;
-           
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // selectEstadoCivil
@@ -220,7 +216,6 @@
             this.txtOtraPatologia.Name = "txtOtraPatologia";
             this.txtOtraPatologia.Size = new System.Drawing.Size(182, 20);
             this.txtOtraPatologia.TabIndex = 15;
-          
             // 
             // button1
             // 
@@ -259,12 +254,12 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Default;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(194)))));
-            this.button2.Location = new System.Drawing.Point(3, 25);
+            this.button2.Location = new System.Drawing.Point(8, 17);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(45, 43);
-            this.button2.TabIndex = 28;
+            this.button2.TabIndex = 34;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.Click += new System.EventHandler(this.button2_Click_2);
             // 
             // ventanaAgregarPaciente
             // 

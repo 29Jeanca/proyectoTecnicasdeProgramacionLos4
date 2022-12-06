@@ -45,8 +45,8 @@ namespace proyectoHospitalesGrupoLos4
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ventanaMenu menu = new ventanaMenu();
-            menu.Show();
+            ventanaInicioSesion inicio = new ventanaInicioSesion();
+            inicio.Show();
             this.Visible = false;
         }
 

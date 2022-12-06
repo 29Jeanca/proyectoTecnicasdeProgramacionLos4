@@ -53,7 +53,7 @@
             this.input_CantidadConsultorios = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.input_CantidadNiveles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.input_CantidadConsultorios)).BeginInit();
             this.panel1.SuspendLayout();
@@ -692,25 +692,25 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(89)))), ((int)(((byte)(191)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Location = new System.Drawing.Point(-7, -5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(208, 621);
             this.panel1.TabIndex = 28;
             // 
-            // button1
+            // button3
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(194)))));
-            this.button1.Location = new System.Drawing.Point(7, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 43);
-            this.button1.TabIndex = 28;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(194)))));
+            this.button3.Location = new System.Drawing.Point(11, 9);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 43);
+            this.button3.TabIndex = 31;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ventanaAgregarHospitales
             // 
@@ -783,6 +783,6 @@
         private System.Windows.Forms.NumericUpDown input_CantidadConsultorios;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }

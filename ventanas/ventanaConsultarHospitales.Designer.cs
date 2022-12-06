@@ -52,10 +52,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.txt_cantidadNiveles = new System.Windows.Forms.TextBox();
             this.txt_cantidadConsultorios = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,7 +145,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(89)))), ((int)(((byte)(191)))));
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Location = new System.Drawing.Point(-22, -4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(245, 612);
@@ -273,20 +273,6 @@
             this.label12.TabIndex = 24;
             this.label12.Text = "Año de construcción";
             // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(76)))), ((int)(((byte)(117)))));
-            this.button2.Location = new System.Drawing.Point(24, 10);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 43);
-            this.button2.TabIndex = 31;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // txt_cantidadNiveles
             // 
             this.txt_cantidadNiveles.Enabled = false;
@@ -312,6 +298,20 @@
             this.button1.Text = "Limpiar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(76)))), ((int)(((byte)(117)))));
+            this.button3.Location = new System.Drawing.Point(25, 8);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 43);
+            this.button3.TabIndex = 31;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ventanaConsultarHospitales
             // 
@@ -383,9 +383,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txt_cantidadNiveles;
         private System.Windows.Forms.TextBox txt_cantidadConsultorios;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }

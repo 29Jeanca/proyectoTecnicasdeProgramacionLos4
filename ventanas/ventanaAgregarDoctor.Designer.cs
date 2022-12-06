@@ -49,7 +49,7 @@
             this.combo_GradoAcademico = new System.Windows.Forms.ComboBox();
             this.btnAgregarDoctor = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAtras = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +74,6 @@
             this.combo_IdHospital.Name = "combo_IdHospital";
             this.combo_IdHospital.Size = new System.Drawing.Size(130, 21);
             this.combo_IdHospital.TabIndex = 1;
-           
             // 
             // label2
             // 
@@ -93,7 +92,7 @@
             this.txt_NombreDoctor.Name = "txt_NombreDoctor";
             this.txt_NombreDoctor.Size = new System.Drawing.Size(130, 20);
             this.txt_NombreDoctor.TabIndex = 3;
-           
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -147,7 +146,6 @@
             this.txt_TelefonoDoctor.Name = "txt_TelefonoDoctor";
             this.txt_TelefonoDoctor.Size = new System.Drawing.Size(130, 20);
             this.txt_TelefonoDoctor.TabIndex = 9;
-            
             this.txt_TelefonoDoctor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_TelefonoDoctor_KeyPress);
             // 
             // label6
@@ -249,25 +247,25 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(194)))));
-            this.panel1.Controls.Add(this.btnAtras);
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Location = new System.Drawing.Point(-9, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(205, 473);
             this.panel1.TabIndex = 20;
             // 
-            // btnAtras
+            // button3
             // 
-            this.btnAtras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtras.BackgroundImage")));
-            this.btnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(194)))));
-            this.btnAtras.Location = new System.Drawing.Point(12, 3);
-            this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(45, 43);
-            this.btnAtras.TabIndex = 19;
-            this.btnAtras.UseVisualStyleBackColor = true;
-            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(194)))));
+            this.button3.Location = new System.Drawing.Point(12, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 43);
+            this.button3.TabIndex = 30;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // ventanaAgregarDoctor
             // 
@@ -330,6 +328,6 @@
         private System.Windows.Forms.Button btnAgregarDoctor;
         private System.Windows.Forms.TextBox txt_CorreoDoctor;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Button button3;
     }
 }

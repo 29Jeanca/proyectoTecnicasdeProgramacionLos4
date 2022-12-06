@@ -22,6 +22,29 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void combo_IdHospital_SelectedIndexChanged(object sender, EventArgs e)
         {
+            label1.Visible = true;
+            label2.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
+            label5.Visible = true;
+            label6.Visible = true;
+            label7.Visible = true;
+            label8.Visible = true;
+            label9.Visible = true;
+            label10.Visible = true;
+            label11.Visible = true;
+            label12.Visible = true;
+            txt_valorFiscal.Visible = true;
+            txt_areaTerreno.Visible = true;
+            txt_direccionExacta.Visible = true;
+            txt_provincia.Visible = true;
+            txt_canton.Visible = true;
+            txt_distrito.Visible = true;
+            txt_cantidadNiveles.Visible = true;
+            txt_color.Visible = true;
+            txt_cantidadConsultorios.Visible = true;
+            txt_tiposCirugia.Visible = true;
+            txt_anioConstruccion.Visible = true;
             SqlDataReader seleccionarHospitales = conexionBD.traerInformacionDB("*", "Hospital", "id", combo_IdHospital.Text.Split(' ')[0]);
             while (seleccionarHospitales.Read())
             {
@@ -42,7 +65,29 @@ namespace proyectoHospitalesGrupoLos4.ventanas
 
         private void ventanaConsultarHospitales_Load(object sender, EventArgs e)
         {
-            
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            label12.Visible = false;
+            txt_valorFiscal.Visible = false;
+            txt_areaTerreno.Visible = false;
+            txt_direccionExacta.Visible = false;
+            txt_provincia.Visible = false;
+            txt_canton.Visible = false;
+            txt_distrito.Visible = false;
+            txt_cantidadNiveles.Visible = false;
+            txt_color.Visible = false;
+            txt_cantidadConsultorios.Visible = false;
+            txt_tiposCirugia.Visible = false;
+            txt_anioConstruccion.Visible = false;
             SqlDataReader lectorHospitales = conexionBD.traerInformacionDB("id","Hospital",null,null);
 
             while (lectorHospitales.Read())
@@ -82,6 +127,13 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             txt_cantidadConsultorios.Text = " ";
             txt_tiposCirugia.Text = " ";
             txt_anioConstruccion.Text = " ";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ventanaConsulta   consultas = new ventanaConsulta();
+            consultas.Show();
+            this.Visible = false;
         }
     }
 }

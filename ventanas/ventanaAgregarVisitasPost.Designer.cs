@@ -71,7 +71,6 @@
             this.combo_IdHospital.Name = "combo_IdHospital";
             this.combo_IdHospital.Size = new System.Drawing.Size(194, 23);
             this.combo_IdHospital.TabIndex = 1;
-           
             // 
             // label2
             // 
@@ -177,12 +176,12 @@
             this.txt_Medicamentos.Name = "txt_Medicamentos";
             this.txt_Medicamentos.Size = new System.Drawing.Size(197, 21);
             this.txt_Medicamentos.TabIndex = 11;
-            
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(244, 407);
+            this.label7.Location = new System.Drawing.Point(244, 409);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 15);
@@ -192,7 +191,7 @@
             // input_FechaVisita
             // 
             this.input_FechaVisita.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.input_FechaVisita.Location = new System.Drawing.Point(247, 434);
+            this.input_FechaVisita.Location = new System.Drawing.Point(247, 439);
             this.input_FechaVisita.Name = "input_FechaVisita";
             this.input_FechaVisita.Size = new System.Drawing.Size(197, 22);
             this.input_FechaVisita.TabIndex = 13;
@@ -243,7 +242,7 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(1, -5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 536);
+            this.panel1.Size = new System.Drawing.Size(228, 587);
             this.panel1.TabIndex = 33;
             // 
             // button2
@@ -253,19 +252,19 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Default;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(85)))), ((int)(((byte)(194)))));
-            this.button2.Location = new System.Drawing.Point(11, 14);
+            this.button2.Location = new System.Drawing.Point(2, 7);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(45, 43);
-            this.button2.TabIndex = 28;
+            this.button2.TabIndex = 36;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // ventanaAgregarVisitasPost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(76)))), ((int)(((byte)(117)))));
-            this.ClientSize = new System.Drawing.Size(507, 512);
+            this.ClientSize = new System.Drawing.Size(507, 514);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);

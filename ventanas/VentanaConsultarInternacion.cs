@@ -86,5 +86,12 @@ namespace proyectoHospitalesGrupoLos4.ventanas
             menu.Show();
             this.Visible = false;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ventanaConsulta consulta = new ventanaConsulta();
+            consulta.Show();
+            this.Visible = false;
+        }
     }
 }

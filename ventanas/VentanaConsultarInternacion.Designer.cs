@@ -42,7 +42,7 @@
             this.textHospital = new System.Windows.Forms.Label();
             this.labelHospital = new System.Windows.Forms.Label();
             this.Card = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.Card.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -194,19 +194,19 @@
             this.Card.Visible = false;
             this.Card.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button2
+            // button3
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(76)))), ((int)(((byte)(117)))));
-            this.button2.Location = new System.Drawing.Point(-1, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 43);
-            this.button2.TabIndex = 30;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(76)))), ((int)(((byte)(117)))));
+            this.button3.Location = new System.Drawing.Point(5, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(45, 43);
+            this.button3.TabIndex = 32;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // VentanaConsultarInternacion
             // 
@@ -214,7 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(76)))), ((int)(((byte)(117)))));
             this.ClientSize = new System.Drawing.Size(568, 293);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.Card);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
@@ -247,6 +247,6 @@
         private System.Windows.Forms.Label textHospital;
         private System.Windows.Forms.Label labelHospital;
         private System.Windows.Forms.Panel Card;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

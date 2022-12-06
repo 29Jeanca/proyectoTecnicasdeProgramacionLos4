@@ -119,6 +119,12 @@
     <Compile Include="ventanas\VentanaConsultarInternacion.Designer.cs">
       <DependentUpon>VentanaConsultarInternacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ventanas\ventanaConsultarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventanas\ventanaConsultarPaciente.Designer.cs">
+      <DependentUpon>ventanaConsultarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="ventanas\ventanaCrearUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\VentanaConsultarInternacion.resx">
       <DependentUpon>VentanaConsultarInternacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventanas\ventanaConsultarPaciente.resx">
+      <DependentUpon>ventanaConsultarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ventanas\ventanaCrearUsuario.resx">
       <DependentUpon>ventanaCrearUsuario.cs</DependentUpon>
